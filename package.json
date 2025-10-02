@@ -1,0 +1,17 @@
+{
+	"scripts": {
+		"start": "five-server . --open index.html",
+		"build": "tsc",
+		"format": "prettier --write '**/*.{js,ts,json,md}'"
+	},
+	"dependencies": {
+		"@types/d3": "^7.4.3",
+		"d3": "^7.9.0",
+		"prettier": "^3.6.2"
+	},
+	"devDependencies": {
+		"five-server": "^0.4.4",
+		"nimble-html": "^0.1.0",
+		"typescript": "^5.9.3"
+	}
+}
