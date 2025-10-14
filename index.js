@@ -1,8 +1,8 @@
 import {html} from 'nimble-html'
-import {DopeElement} from './src/DopeElement.js'
-
-// This could be optimized, we don't need the entire d3 library
+// TODO we don't need the whole Lume and D3 libs. Upgrade to a tree-shaken bundle later as optimization.
+import 'lume'
 import * as d3 from 'd3'
+import {DopeElement} from './src/DopeElement.js'
 
 const response = await fetch('./src/data.json')
 const graphData = await response.json()
