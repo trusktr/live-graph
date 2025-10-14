@@ -148,7 +148,6 @@ class LiveGraph extends DopeElement {
 					display: block;
 					width: 100%;
 					height: 100vh;
-					background: #1f77b4;
 				}
 
 				svg {
@@ -159,22 +158,7 @@ class LiveGraph extends DopeElement {
 				}
 
 				.nodes circle {
-					fill: #1f77b4;
-					stroke: #fff;
-					stroke-width: 2;
 					cursor: pointer;
-				}
-
-				.nodes circle[data-group='Cited Works'] {
-					fill: #ff7f0e;
-				}
-				.nodes circle[data-group='Citing Patents'] {
-					fill: #1f77b4;
-				}
-
-				.links line {
-					stroke: #333;
-					stroke-width: 2;
 				}
 			</style>
 		`
