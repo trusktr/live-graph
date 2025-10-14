@@ -4,13 +4,13 @@ import {DopeElement} from './src/DopeElement.js'
 // This could be optimized, we don't need the entire d3 library
 import * as d3 from 'd3'
 
-console.log(d3)
+const response = await fetch('./src/data.json')
+const graphData = await response.json()
 
 class LiveGraph extends DopeElement {
 	connectedCallback() {
-		// Wait for the template to be rendered before initializing the graph
-		// Use multiple microtasks to ensure DOM is fully ready
-		queueMicrotask(() => queueMicrotask(() => this.initializeGraph()))
+		// Wait for the template to be rendered before initializing the graph.
+		queueMicrotask(() => this.initializeGraph())
 	}
 
 	// Load data from JSON file
@@ -19,84 +19,9 @@ class LiveGraph extends DopeElement {
 		return await response.json()
 	}
 
-	data = {
-		nodes: [
-			{id: 'Myriel', group: 1},
-			{id: 'Napoleon', group: 1},
-			{id: 'Mlle.Baptistine', group: 1},
-			{id: 'Mme.Magloire', group: 1},
-			{id: 'CountessdeLo', group: 1},
-			{id: 'Geborand', group: 1},
-			{id: 'Champtercier', group: 1},
-			{id: 'Cravatte', group: 1},
-			{id: 'Count', group: 1},
-			{id: 'OldMan', group: 1},
-			{id: 'Labarre', group: 2},
-			{id: 'Valjean', group: 2},
-			{id: 'Marguerite', group: 3},
-			{id: 'Mme.deR', group: 2},
-			{id: 'Isabeau', group: 2},
-			{id: 'Gervais', group: 2},
-			{id: 'Tholomyes', group: 3},
-			{id: 'Listolier', group: 3},
-			{id: 'Fameuil', group: 3},
-			{id: 'Blacheville', group: 3},
-			{id: 'Favourite', group: 3},
-			{id: 'Dahlia', group: 3},
-			{id: 'Zephine', group: 3},
-			{id: 'Fantine', group: 3},
-		],
-		links: [
-			{source: 'Napoleon', target: 'Myriel', value: 1},
-			{source: 'Mlle.Baptistine', target: 'Myriel', value: 8},
-			{source: 'Mme.Magloire', target: 'Myriel', value: 10},
-			{source: 'Mme.Magloire', target: 'Mlle.Baptistine', value: 6},
-			{source: 'CountessdeLo', target: 'Myriel', value: 1},
-			{source: 'Geborand', target: 'Myriel', value: 1},
-			{source: 'Champtercier', target: 'Myriel', value: 1},
-			{source: 'Cravatte', target: 'Myriel', value: 1},
-			{source: 'Count', target: 'Myriel', value: 2},
-			{source: 'OldMan', target: 'Myriel', value: 1},
-			{source: 'Valjean', target: 'Labarre', value: 1},
-			{source: 'Valjean', target: 'Mme.Magloire', value: 3},
-			{source: 'Valjean', target: 'Mlle.Baptistine', value: 3},
-			{source: 'Valjean', target: 'Myriel', value: 5},
-			{source: 'Marguerite', target: 'Valjean', value: 1},
-			{source: 'Mme.deR', target: 'Valjean', value: 1},
-			{source: 'Isabeau', target: 'Valjean', value: 1},
-			{source: 'Gervais', target: 'Valjean', value: 1},
-			{source: 'Listolier', target: 'Tholomyes', value: 4},
-			{source: 'Fameuil', target: 'Tholomyes', value: 4},
-			{source: 'Fameuil', target: 'Listolier', value: 4},
-			{source: 'Blacheville', target: 'Tholomyes', value: 4},
-			{source: 'Blacheville', target: 'Listolier', value: 4},
-			{source: 'Blacheville', target: 'Fameuil', value: 4},
-			{source: 'Favourite', target: 'Tholomyes', value: 3},
-			{source: 'Favourite', target: 'Listolier', value: 3},
-			{source: 'Favourite', target: 'Fameuil', value: 3},
-			{source: 'Favourite', target: 'Blacheville', value: 4},
-			{source: 'Dahlia', target: 'Tholomyes', value: 5},
-			{source: 'Dahlia', target: 'Listolier', value: 4},
-			{source: 'Dahlia', target: 'Fameuil', value: 4},
-			{source: 'Dahlia', target: 'Blacheville', value: 4},
-			{source: 'Dahlia', target: 'Favourite', value: 5},
-			{source: 'Zephine', target: 'Tholomyes', value: 4},
-			{source: 'Zephine', target: 'Listolier', value: 4},
-			{source: 'Zephine', target: 'Fameuil', value: 4},
-			{source: 'Zephine', target: 'Blacheville', value: 3},
-			{source: 'Zephine', target: 'Favourite', value: 4},
-			{source: 'Zephine', target: 'Dahlia', value: 4},
-			{source: 'Fantine', target: 'Tholomyes', value: 3},
-			{source: 'Fantine', target: 'Listolier', value: 3},
-			{source: 'Fantine', target: 'Fameuil', value: 3},
-			{source: 'Fantine', target: 'Blacheville', value: 1},
-			{source: 'Fantine', target: 'Favourite', value: 3},
-			{source: 'Fantine', target: 'Dahlia', value: 5},
-			{source: 'Fantine', target: 'Zephine', value: 6},
-		],
-	}
+	data = graphData
 
-	async initializeGraph() {
+	initializeGraph() {
 		// Get SVG and container elements from the declarative template
 		const svgElement = this.shadowRoot?.querySelector('svg')
 		if (!svgElement) {
@@ -105,12 +30,11 @@ class LiveGraph extends DopeElement {
 		}
 
 		// Load the actual dataset
-		const graphData = await this.loadData()
 		this.template()
 
 		// Copy data to avoid mutation of original, and add x,y properties for D3 force simulation
-		const links = graphData.links.map(d => ({...d}))
-		const nodes = graphData.nodes.map(d => ({...d, x: Math.random() * 100 - 50, y: Math.random() * 100 - 50}))
+		const links = this.data.links.map(d => ({...d}))
+		const nodes = this.data.nodes.map(d => ({...d, x: Math.random() * 100 - 50, y: Math.random() * 100 - 50}))
 
 		// Create the force simulation
 		const simulation = d3
@@ -140,30 +64,12 @@ class LiveGraph extends DopeElement {
 		const linkGroup = d3.select(linksElement)
 		const nodeGroup = d3.select(nodesElement)
 
-		// Create and bind links
-		const link = linkGroup
-			.selectAll('line')
-			.data(links)
-			.enter()
-			.append('line')
-			.attr('stroke', '#999')
-			.attr('stroke-opacity', 0.6)
-			.attr('stroke-width', d => Math.sqrt(d.value))
-
-		// Create and bind nodes
+		// Bind to existing declaratively created elements
+		const link = linkGroup.selectAll('line').data(links)
 		const node = nodeGroup
 			.selectAll('circle')
 			.data(nodes)
-			.enter()
-			.append('circle')
-			.attr('r', d => d.radius || 5)
-			.attr('fill', d => (d.group === 'Citing Patents' ? '#1f77b4' : '#ff7f0e'))
-			.attr('stroke', '#fff')
-			.attr('stroke-width', 1.5)
 			.call(/** @type {any} */ (d3.drag()).on('start', dragstarted).on('drag', dragged).on('end', dragended))
-
-		// Add titles for tooltips
-		node.append('title').text(d => d.id)
 
 		console.log('Created elements:', {
 			linkCount: link.size(),
@@ -204,9 +110,38 @@ class LiveGraph extends DopeElement {
 		const html = String.raw
 
 		const string = html`
-			<svg width="928" height="680" viewBox="-92.8 -68 185.6 136">
-				<g class="links"></g>
-				<g class="nodes"></g>
+			<svg width="928" height="680" viewBox="-139.2 -102 278.4 204">
+				<g class="links">
+					${this.data
+						? this.data.links.map(
+								link =>
+									html`<line
+										data-value="${link.value}"
+										stroke="#999"
+										stroke-opacity="0.6"
+										stroke-width="${Math.sqrt(link.value)}"
+									></line>`,
+							)
+						: ''}
+				</g>
+				<g class="nodes">
+					${this.data
+						? this.data.nodes.map(
+								node => html`
+									<circle
+										r="5"
+										data-id="${node.id}"
+										data-group="${node.group}"
+										fill="${String(node.group) === 'Citing Patents' ? '#1f77b4' : '#ff7f0e'}"
+										stroke="#fff"
+										stroke-width="1.5"
+									>
+										<title>${node.id}</title>
+									</circle>
+								`,
+							)
+						: ''}
+				</g>
 			</svg>
 			<style>
 				:host {
