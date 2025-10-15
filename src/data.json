@@ -1,6 +1,87 @@
 {
 	"nodes": [
 		{
+			"id": "static_left",
+			"group": "static",
+			"radius": 40,
+			"x": -150,
+			"y": 0,
+			"fx": -150,
+			"fy": 0
+		},
+		{
+			"id": "static_right",
+			"group": "static",
+			"radius": 40,
+			"x": 150,
+			"y": 0,
+			"fx": 150,
+			"fy": 0
+		},
+		{
+			"id": "static_top",
+			"group": "static",
+			"radius": 35,
+			"x": 0,
+			"y": -80,
+			"fx": 0,
+			"fy": -80
+		},
+		{
+			"id": "static_bottom",
+			"group": "static",
+			"radius": 35,
+			"x": 0,
+			"y": 80,
+			"fx": 0,
+			"fy": 80
+		},
+		{
+			"id": "static_top_left",
+			"group": "static",
+			"radius": 30,
+			"x": -100,
+			"y": -60,
+			"fx": -100,
+			"fy": -60
+		},
+		{
+			"id": "static_top_right",
+			"group": "static",
+			"radius": 30,
+			"x": 100,
+			"y": -60,
+			"fx": 100,
+			"fy": -60
+		},
+		{
+			"id": "static_bottom_left",
+			"group": "static",
+			"radius": 30,
+			"x": -100,
+			"y": 60,
+			"fx": -100,
+			"fy": 60
+		},
+		{
+			"id": "static_bottom_right",
+			"group": "static",
+			"radius": 30,
+			"x": 100,
+			"y": 60,
+			"fx": 100,
+			"fy": 60
+		},
+		{
+			"id": "static_center",
+			"group": "static",
+			"radius": 25,
+			"x": 0,
+			"y": 0,
+			"fx": 0,
+			"fy": 0
+		},
+		{
 			"id": "alpha_1",
 			"group": "primary",
 			"radius": 2,

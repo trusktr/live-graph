@@ -28,7 +28,14 @@ export class LiveGraph extends DopeElement {
 
 		// Copy data to avoid mutation of original, and add x,y properties for D3 force simulation
 		const links = this.data.links.map(d => ({...d}))
-		const nodes = this.data.nodes.map(d => ({...d, x: Math.random() * 200 - 100, y: Math.random() * 200 - 100}))
+		const nodes = this.data.nodes.map(d => {
+			// Static nodes keep their fixed positions, others get random positions
+			if (d.group === 'static') {
+				return {...d} // Static nodes already have x, y, fx, fy defined
+			} else {
+				return {...d, x: Math.random() * 400 - 200, y: Math.random() * 400 - 200} // Spread other nodes wider
+			}
+		})
 
 		// Create the force simulation with D3.
 		const simulation = d3
@@ -40,9 +47,27 @@ export class LiveGraph extends DopeElement {
 					.id(d => /** @type {any} */ (d).id)
 					.distance(80), // Increase link distance from default ~30 to 80
 			)
-			.force('charge', d3.forceManyBody().strength(-350)) // Reduce repulsion to bring islands closer
-			.force('x', d3.forceX(0).strength(0.1)) // Stronger centering force to pull islands together
-			.force('y', d3.forceY(0).strength(0.1))
+			.force(
+				'charge',
+				d3.forceManyBody().strength(d => {
+					const node = /** @type {any} */ (d)
+					if (node.group === 'static') {
+						// Reduced repulsion for smaller static island
+						if (node.id === 'static_center') {
+							return -400 - node.radius * 6 // Center node: moderate repulsion to clear stragglers
+						} else if (node.id === 'static_top' || node.id === 'static_bottom') {
+							return -120 - node.radius * 3 // Weaker vertical repulsion
+						} else if (node.id === 'static_left' || node.id === 'static_right') {
+							return -300 - node.radius * 5 // Reduced horizontal repulsion
+						} else {
+							return -200 - node.radius * 4 // Diagonal nodes: reduced repulsion
+						}
+					}
+					return -250
+				}),
+			) // Static nodes have reduced repulsion for smaller exclusion zone
+			.force('x', d3.forceX(0).strength(0.1)) // Horizontal centering
+			.force('y', d3.forceY(0).strength(0.05))
 
 		// Select the declaratively created link and node groups
 		const linksElement = this.shadowRoot?.querySelector('.links')
@@ -148,27 +173,42 @@ export class LiveGraph extends DopeElement {
 
 					<g class="nodes">
 						${this.data
-							? this.data.nodes.map(
-									node => svg`
+							? this.data.nodes.map(node => {
+									const radius =
+										String(node.group) === 'static'
+											? node.radius
+											: String(node.group) === 'secondary'
+												? nodeDiamsSecondary[(Math.random() * nodeDiamsSecondary.length) | 0] / 2
+												: nodeDiamPrimary / 2
+									const color =
+										String(node.group) === 'static'
+											? '#333333'
+											: String(node.group) === 'secondary'
+												? '#1f77b4'
+												: '#ff7f0e'
+									const stroke = String(node.group) === 'static' ? '#000000' : '#fff'
+									const strokeWidth = String(node.group) === 'static' ? '3' : '1.5'
+
+									return svg`
 										<circle
-											r=${String(node.group) === 'secondary' ? nodeDiamsSecondary[(Math.random() * nodeDiamsSecondary.length) | 0] / 2 : nodeDiamPrimary / 2}
+											r=${radius}
 											data-id="${node.id}"
 											data-group="${node.group}"
-											fill="${String(node.group) === 'secondary' ? '#1f77b4' : '#ff7f0e'}"
-											stroke="#fff"
-											stroke-width="1.5"
+											fill="${color}"
+											stroke="${stroke}"
+											stroke-width="${strokeWidth}"
 										>
 											<title>${node.id}</title>
 										</circle>
-									`,
-								)
+									`
+								})
 							: ''}
 					</g>
 				</svg>
 			</div>
 
 			<div id="lume-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-				<lume-scene webgl>
+				<lume-scene webgl fog>
 					<lume-ambient-light intensity="0.5"></lume-ambient-light>
 
 					<lume-element3d
@@ -198,22 +238,36 @@ export class LiveGraph extends DopeElement {
 						${this.data
 							? this.data.nodes.map(node => {
 									const randomSizePick = (Math.random() * nodeDiamsSecondary.length) | 0
+									const diameter =
+										String(node.group) === 'static'
+											? node.radius * 2
+											: String(node.group) === 'secondary'
+												? nodeDiamsSecondary[randomSizePick]
+												: nodeDiamPrimary
+
+									const limeGreenish = '#41f28b'
+
+									const color =
+										String(node.group) === 'static'
+											? '#333333'
+											: // String(node.group) === 'secondary'
+												// 	? '#1f77b4'
+												// 	: '#ff7f0e'
+												limeGreenish
 
 									return html`
 										<lume-rounded-rectangle
+											has="basic-material"
 											mount-point="0.5 0.5"
-											.size="${String(node.group) === 'secondary'
-												? [nodeDiamsSecondary[randomSizePick], nodeDiamsSecondary[randomSizePick]]
-												: [nodeDiamPrimary, nodeDiamPrimary]}"
-											corner-radius="${String(node.group) === 'secondary'
-												? nodeDiamsSecondary[randomSizePick] / 2
-												: nodeDiamPrimary / 2}"
+											.size="${[diameter, diameter]}"
+											.cornerRadius="${diameter / 2}"
 											thickness="0.1"
 											quadratic-corners="false"
 											data-id="${node.id}"
 											data-group="${node.group}"
-											.color="${String(node.group) === 'secondary' ? '#1f77b4' : '#ff7f0e'}"
+											.color="${color}"
 											receive-shadow="false"
+											opacity="${String(node.group) === 'static' ? '0' : '1'}"
 										></lume-rounded-rectangle>
 									`
 								})
@@ -227,7 +281,7 @@ export class LiveGraph extends DopeElement {
 					display: block;
 					width: 100%;
 					height: 100vh;
-					background: lightblue;
+					background: white;
 				}
 
 				svg {
