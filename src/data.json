@@ -1,2924 +1,2229 @@
 {
 	"nodes": [
 		{
-			"id": "alpha",
+			"id": "alpha_1",
 			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
-			"id": "beta",
+			"id": "beta_1",
 			"group": "primary",
 			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "gamma",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "delta",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "epsilon",
-			"group": "primary",
-			"radius": 3,
 			"citing_patents_count": 3
 		},
 		{
-			"id": "zeta",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "eta",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "theta",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "iota",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "kappa",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "lambda",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "mu",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "nu",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "xi",
-			"group": "primary",
-			"radius": 7,
-			"citing_patents_count": 7
-		},
-		{
-			"id": "omicron",
+			"id": "gamma_1",
 			"group": "primary",
 			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "pi",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "rho",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "sigma",
-			"group": "primary",
-			"radius": 3,
-			"citing_patents_count": 3
-		},
-		{
-			"id": "tau",
-			"group": "primary",
-			"radius": 6,
-			"citing_patents_count": 6
-		},
-		{
-			"id": "upsilon",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "phi",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "chi",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "psi",
-			"group": "primary",
-			"radius": 4,
 			"citing_patents_count": 4
 		},
 		{
-			"id": "omega",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
+			"id": "mercury_1_1",
+			"group": "secondary"
 		},
 		{
-			"id": "apollo",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
+			"id": "venus_1_2",
+			"group": "secondary"
 		},
 		{
-			"id": "artemis",
+			"id": "earth_1_3",
+			"group": "secondary"
+		},
+		{
+			"id": "mars_1_4",
+			"group": "secondary"
+		},
+		{
+			"id": "jupiter_1_5",
+			"group": "secondary"
+		},
+		{
+			"id": "delta_2",
 			"group": "primary",
 			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "athena",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "demeter",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "dionysus",
-			"group": "primary",
-			"radius": 6,
-			"citing_patents_count": 6
-		},
-		{
-			"id": "hades",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "hera",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "hermes",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "hestia",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "poseidon",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "zeus",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "ares",
-			"group": "primary",
-			"radius": 3,
 			"citing_patents_count": 3
 		},
 		{
-			"id": "aphrodite",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
+			"id": "saturn_2_1",
+			"group": "secondary"
 		},
 		{
-			"id": "hephaestus",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
+			"id": "uranus_2_2",
+			"group": "secondary"
 		},
 		{
-			"id": "mercury",
+			"id": "neptune_2_3",
+			"group": "secondary"
+		},
+		{
+			"id": "epsilon_3",
 			"group": "primary",
 			"radius": 3,
-			"citing_patents_count": 3
-		},
-		{
-			"id": "venus",
-			"group": "primary",
-			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
-			"id": "mars",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "jupiter",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "saturn",
-			"group": "primary",
-			"radius": 11,
-			"citing_patents_count": 11
-		},
-		{
-			"id": "uranus",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "neptune",
+			"id": "zeta_3",
 			"group": "primary",
 			"radius": 3,
-			"citing_patents_count": 3
-		},
-		{
-			"id": "pluto",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "comet",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "nebula",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "galaxy",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "quasar",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "pulsar",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "starlight",
-			"group": "primary",
-			"radius": 3,
-			"citing_patents_count": 3
-		},
-		{
-			"id": "moonbeam",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "sunray",
-			"group": "primary",
-			"radius": 5,
 			"citing_patents_count": 5
 		},
 		{
-			"id": "aurora",
-			"group": "primary",
-			"radius": 3,
-			"citing_patents_count": 3
+			"id": "pluto_3_1",
+			"group": "secondary"
 		},
 		{
-			"id": "cosmic",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
+			"id": "ceres_3_2",
+			"group": "secondary"
 		},
 		{
-			"id": "quantum",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
+			"id": "vesta_3_3",
+			"group": "secondary"
 		},
 		{
-			"id": "photon",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
+			"id": "pallas_3_4",
+			"group": "secondary"
 		},
 		{
-			"id": "neutron",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "proton",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "electron",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "atom",
-			"group": "primary",
-			"radius": 12,
-			"citing_patents_count": 12
-		},
-		{
-			"id": "molecule",
-			"group": "primary",
-			"radius": 3,
-			"citing_patents_count": 3
-		},
-		{
-			"id": "crystal",
+			"id": "eta_4",
 			"group": "primary",
 			"radius": 2,
-			"citing_patents_count": 2
+			"citing_patents_count": 3
 		},
 		{
-			"id": "plasma",
-			"group": "primary",
-			"radius": 6,
-			"citing_patents_count": 6
+			"id": "juno_4_1",
+			"group": "secondary"
 		},
 		{
-			"id": "fusion",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
+			"id": "hygeia_4_2",
+			"group": "secondary"
 		},
 		{
-			"id": "fission",
-			"group": "primary",
-			"radius": 6,
-			"citing_patents_count": 6
+			"id": "europa_4_3",
+			"group": "secondary"
 		},
 		{
-			"id": "energy",
+			"id": "titan_4_4",
+			"group": "secondary"
+		},
+		{
+			"id": "theta_5",
 			"group": "primary",
-			"radius": 4,
+			"radius": 3,
 			"citing_patents_count": 4
 		},
 		{
-			"id": "matter",
+			"id": "iota_5",
 			"group": "primary",
 			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "void",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "stellar",
-			"group": "primary",
-			"radius": 29,
-			"citing_patents_count": 29
-		},
-		{
-			"id": "lunar",
-			"group": "primary",
-			"radius": 11,
-			"citing_patents_count": 11
-		},
-		{
-			"id": "solar",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "orbital",
-			"group": "primary",
-			"radius": 4,
 			"citing_patents_count": 4
 		},
 		{
-			"id": "meteor",
+			"id": "io_5_1",
+			"group": "secondary"
+		},
+		{
+			"id": "ganymede_5_2",
+			"group": "secondary"
+		},
+		{
+			"id": "callisto_5_3",
+			"group": "secondary"
+		},
+		{
+			"id": "kappa_6",
+			"group": "primary",
+			"radius": 1,
+			"citing_patents_count": 2
+		},
+		{
+			"id": "lambda_6",
 			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
-			"id": "asteroid",
+			"id": "mu_6",
 			"group": "primary",
 			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "eclipse",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "horizon",
-			"group": "primary",
-			"radius": 4,
-			"citing_patents_count": 4
-		},
-		{
-			"id": "zenith",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "nadir",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "apex",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "vertex",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "matrix",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "vector",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "scalar",
-			"group": "primary",
-			"radius": 11,
-			"citing_patents_count": 11
-		},
-		{
-			"id": "tensor",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "algorithm",
-			"group": "primary",
-			"radius": 3,
-			"citing_patents_count": 3
-		},
-		{
-			"id": "protocol",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "cipher",
-			"group": "primary",
-			"radius": 4,
-			"citing_patents_count": 4
-		},
-		{
-			"id": "code",
-			"group": "primary",
-			"radius": 7,
-			"citing_patents_count": 7
-		},
-		{
-			"id": "signal",
-			"group": "primary",
-			"radius": 3,
-			"citing_patents_count": 3
-		},
-		{
-			"id": "frequency",
-			"group": "primary",
-			"radius": 2,
-			"citing_patents_count": 2
-		},
-		{
-			"id": "amplitude",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "wavelength",
-			"group": "primary",
-			"radius": 1,
-			"citing_patents_count": 1
-		},
-		{
-			"id": "spectrum",
-			"group": "primary",
-			"radius": 3,
-			"citing_patents_count": 3
-		},
-		{
-			"id": "phase",
-			"group": "primary",
-			"radius": 5,
 			"citing_patents_count": 5
 		},
 		{
-			"id": "cascade",
+			"id": "mimas_6_1",
+			"group": "secondary"
+		},
+		{
+			"id": "enceladus_6_2",
+			"group": "secondary"
+		},
+		{
+			"id": "tethys_6_3",
+			"group": "secondary"
+		},
+		{
+			"id": "dione_6_4",
+			"group": "secondary"
+		},
+		{
+			"id": "rhea_6_5",
+			"group": "secondary"
+		},
+		{
+			"id": "iapetus_6_6",
+			"group": "secondary"
+		},
+		{
+			"id": "nu_7",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 1
+		},
+		{
+			"id": "ariel_7_1",
+			"group": "secondary"
+		},
+		{
+			"id": "umbriel_7_2",
+			"group": "secondary"
+		},
+		{
+			"id": "xi_8",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 3
+		},
+		{
+			"id": "omicron_8",
 			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
-			"id": "flux",
+			"id": "pi_8",
 			"group": "primary",
-			"radius": 4,
-			"citing_patents_count": 4
+			"radius": 3,
+			"citing_patents_count": 2
 		},
 		{
-			"id": "gradient",
-			"group": "primary",
-			"radius": 7,
-			"citing_patents_count": 7
+			"id": "titania_8_1",
+			"group": "secondary"
 		},
 		{
-			"id": "velocity",
+			"id": "oberon_8_2",
+			"group": "secondary"
+		},
+		{
+			"id": "triton_8_3",
+			"group": "secondary"
+		},
+		{
+			"id": "charon_8_4",
+			"group": "secondary"
+		},
+		{
+			"id": "phobos_8_5",
+			"group": "secondary"
+		},
+		{
+			"id": "rho_9",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 2
+		},
+		{
+			"id": "deimos_9_1",
+			"group": "secondary"
+		},
+		{
+			"id": "mercury_9_2",
+			"group": "secondary"
+		},
+		{
+			"id": "venus_9_3",
+			"group": "secondary"
+		},
+		{
+			"id": "sigma_10",
+			"group": "primary",
+			"radius": 1,
+			"citing_patents_count": 2
+		},
+		{
+			"id": "tau_10",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 2
+		},
+		{
+			"id": "upsilon_10",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 1
+		},
+		{
+			"id": "earth_10_1",
+			"group": "secondary"
+		},
+		{
+			"id": "mars_10_2",
+			"group": "secondary"
+		},
+		{
+			"id": "jupiter_10_3",
+			"group": "secondary"
+		},
+		{
+			"id": "saturn_10_4",
+			"group": "secondary"
+		},
+		{
+			"id": "phi_11",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 2
+		},
+		{
+			"id": "uranus_11_1",
+			"group": "secondary"
+		},
+		{
+			"id": "neptune_11_2",
+			"group": "secondary"
+		},
+		{
+			"id": "pluto_11_3",
+			"group": "secondary"
+		},
+		{
+			"id": "ceres_11_4",
+			"group": "secondary"
+		},
+		{
+			"id": "chi_12",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 1
+		},
+		{
+			"id": "vesta_12_1",
+			"group": "secondary"
+		},
+		{
+			"id": "pallas_12_2",
+			"group": "secondary"
+		},
+		{
+			"id": "juno_12_3",
+			"group": "secondary"
+		},
+		{
+			"id": "hygeia_12_4",
+			"group": "secondary"
+		},
+		{
+			"id": "psi_13",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 2
+		},
+		{
+			"id": "omega_13",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 1
+		},
+		{
+			"id": "europa_13_1",
+			"group": "secondary"
+		},
+		{
+			"id": "titan_13_2",
+			"group": "secondary"
+		},
+		{
+			"id": "io_13_3",
+			"group": "secondary"
+		},
+		{
+			"id": "ganymede_13_4",
+			"group": "secondary"
+		},
+		{
+			"id": "apollo_14",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 1
+		},
+		{
+			"id": "atlas_14",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 5
+		},
+		{
+			"id": "orion_14",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 3
+		},
+		{
+			"id": "callisto_14_1",
+			"group": "secondary"
+		},
+		{
+			"id": "mimas_14_2",
+			"group": "secondary"
+		},
+		{
+			"id": "enceladus_14_3",
+			"group": "secondary"
+		},
+		{
+			"id": "tethys_14_4",
+			"group": "secondary"
+		},
+		{
+			"id": "perseus_15",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 1
+		},
+		{
+			"id": "hercules_15",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 2
+		},
+		{
+			"id": "dione_15_1",
+			"group": "secondary"
+		},
+		{
+			"id": "rhea_15_2",
+			"group": "secondary"
+		},
+		{
+			"id": "iapetus_15_3",
+			"group": "secondary"
+		},
+		{
+			"id": "ariel_15_4",
+			"group": "secondary"
+		},
+		{
+			"id": "umbriel_15_5",
+			"group": "secondary"
+		},
+		{
+			"id": "alpha_16",
 			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
-			"id": "109-294-662-661-65X",
+			"id": "titania_16_1",
 			"group": "secondary"
 		},
 		{
-			"id": "074-937-457-594-345",
+			"id": "oberon_16_2",
 			"group": "secondary"
 		},
 		{
-			"id": "081-355-367-506-27X",
-			"group": "secondary"
-		},
-		{
-			"id": "048-634-530-447-798",
-			"group": "secondary"
-		},
-		{
-			"id": "137-231-469-269-151",
-			"group": "secondary"
-		},
-		{
-			"id": "031-072-815-607-16X",
-			"group": "secondary"
-		},
-		{
-			"id": "105-312-070-982-098",
-			"group": "secondary"
-		},
-		{
-			"id": "018-515-082-074-296",
-			"group": "secondary"
-		},
-		{
-			"id": "027-228-373-793-594",
-			"group": "secondary"
-		},
-		{
-			"id": "016-712-604-622-721",
-			"group": "secondary"
-		},
-		{
-			"id": "086-316-087-480-933",
-			"group": "secondary"
-		},
-		{
-			"id": "118-309-833-112-117",
-			"group": "secondary"
-		},
-		{
-			"id": "134-672-819-080-83X",
-			"group": "secondary"
-		},
-		{
-			"id": "036-789-224-520-054",
-			"group": "secondary"
-		},
-		{
-			"id": "106-594-488-484-12X",
-			"group": "secondary"
-		},
-		{
-			"id": "125-726-727-125-409",
-			"group": "secondary"
-		},
-		{
-			"id": "161-487-188-181-03X",
-			"group": "secondary"
-		},
-		{
-			"id": "076-538-237-089-675",
-			"group": "secondary"
-		},
-		{
-			"id": "051-324-518-696-462",
-			"group": "secondary"
-		},
-		{
-			"id": "198-017-973-913-570",
-			"group": "secondary"
-		},
-		{
-			"id": "156-653-831-632-101",
-			"group": "secondary"
-		},
-		{
-			"id": "178-739-712-688-618",
-			"group": "secondary"
-		},
-		{
-			"id": "131-486-498-702-07X",
-			"group": "secondary"
-		},
-		{
-			"id": "010-031-167-075-106",
-			"group": "secondary"
-		},
-		{
-			"id": "119-453-428-180-987",
-			"group": "secondary"
-		},
-		{
-			"id": "153-595-914-216-97X",
-			"group": "secondary"
-		},
-		{
-			"id": "148-353-591-913-750",
-			"group": "secondary"
-		},
-		{
-			"id": "019-827-938-996-490",
-			"group": "secondary"
-		},
-		{
-			"id": "184-646-935-269-773",
-			"group": "secondary"
-		},
-		{
-			"id": "186-230-275-872-748",
-			"group": "secondary"
-		},
-		{
-			"id": "165-291-395-706-725",
-			"group": "secondary"
-		},
-		{
-			"id": "047-113-007-956-15X",
-			"group": "secondary"
-		},
-		{
-			"id": "089-019-916-582-397",
-			"group": "secondary"
-		},
-		{
-			"id": "136-000-598-663-919",
-			"group": "secondary"
-		},
-		{
-			"id": "051-072-189-723-758",
-			"group": "secondary"
-		},
-		{
-			"id": "040-766-915-457-886",
-			"group": "secondary"
-		},
-		{
-			"id": "141-482-415-400-338",
-			"group": "secondary"
-		},
-		{
-			"id": "149-129-599-518-595",
-			"group": "secondary"
-		},
-		{
-			"id": "156-286-485-464-499",
-			"group": "secondary"
-		},
-		{
-			"id": "001-353-214-346-040",
-			"group": "secondary"
-		},
-		{
-			"id": "118-479-143-842-720",
-			"group": "secondary"
-		},
-		{
-			"id": "007-641-959-106-118",
-			"group": "secondary"
-		},
-		{
-			"id": "189-040-066-278-226",
-			"group": "secondary"
-		},
-		{
-			"id": "026-244-336-682-442",
-			"group": "secondary"
-		},
-		{
-			"id": "168-286-254-597-740",
-			"group": "secondary"
-		},
-		{
-			"id": "109-916-358-959-05X",
-			"group": "secondary"
-		},
-		{
-			"id": "002-458-268-309-533",
-			"group": "secondary"
-		},
-		{
-			"id": "038-310-729-099-192",
-			"group": "secondary"
-		},
-		{
-			"id": "179-033-965-606-598",
-			"group": "secondary"
-		},
-		{
-			"id": "113-229-447-433-64X",
-			"group": "secondary"
-		},
-		{
-			"id": "077-771-399-719-227",
-			"group": "secondary"
-		},
-		{
-			"id": "183-966-651-664-305",
-			"group": "secondary"
-		},
-		{
-			"id": "013-467-292-050-692",
-			"group": "secondary"
-		},
-		{
-			"id": "079-314-054-163-947",
-			"group": "secondary"
-		},
-		{
-			"id": "110-082-309-221-187",
-			"group": "secondary"
-		},
-		{
-			"id": "128-382-566-327-896",
-			"group": "secondary"
+			"id": "beta_17",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 5
 		},
 		{
-			"id": "143-543-676-408-839",
+			"id": "triton_17_1",
 			"group": "secondary"
 		},
 		{
-			"id": "005-743-260-244-802",
+			"id": "charon_17_2",
 			"group": "secondary"
 		},
 		{
-			"id": "026-638-223-054-804",
+			"id": "phobos_17_3",
 			"group": "secondary"
 		},
 		{
-			"id": "048-208-660-423-215",
-			"group": "secondary"
-		},
-		{
-			"id": "159-658-602-048-982",
-			"group": "secondary"
-		},
-		{
-			"id": "077-811-145-153-079",
-			"group": "secondary"
-		},
-		{
-			"id": "170-781-236-728-970",
-			"group": "secondary"
-		},
-		{
-			"id": "144-284-594-583-951",
-			"group": "secondary"
-		},
-		{
-			"id": "139-409-891-293-77X",
-			"group": "secondary"
-		},
-		{
-			"id": "081-017-751-048-013",
-			"group": "secondary"
-		},
-		{
-			"id": "114-963-910-586-828",
-			"group": "secondary"
-		},
-		{
-			"id": "162-513-842-046-362",
-			"group": "secondary"
-		},
-		{
-			"id": "188-803-921-043-695",
-			"group": "secondary"
-		},
-		{
-			"id": "191-147-881-232-285",
-			"group": "secondary"
-		},
-		{
-			"id": "081-817-015-173-962",
-			"group": "secondary"
-		},
-		{
-			"id": "106-530-060-683-82X",
-			"group": "secondary"
-		},
-		{
-			"id": "133-935-409-400-672",
-			"group": "secondary"
-		},
-		{
-			"id": "046-588-899-387-353",
-			"group": "secondary"
-		},
-		{
-			"id": "049-222-171-973-678",
-			"group": "secondary"
-		},
-		{
-			"id": "074-598-665-914-143",
-			"group": "secondary"
-		},
-		{
-			"id": "190-195-697-065-907",
-			"group": "secondary"
-		},
-		{
-			"id": "031-461-589-086-771",
-			"group": "secondary"
-		},
-		{
-			"id": "167-851-091-520-257",
-			"group": "secondary"
-		},
-		{
-			"id": "151-760-923-304-502",
-			"group": "secondary"
-		},
-		{
-			"id": "097-019-537-894-104",
-			"group": "secondary"
-		},
-		{
-			"id": "170-696-774-214-700",
-			"group": "secondary"
-		},
-		{
-			"id": "084-807-525-209-072",
-			"group": "secondary"
-		},
-		{
-			"id": "044-648-704-787-12X",
-			"group": "secondary"
-		},
-		{
-			"id": "150-822-190-827-131",
-			"group": "secondary"
-		},
-		{
-			"id": "051-919-508-851-10X",
-			"group": "secondary"
-		},
-		{
-			"id": "036-251-116-198-69X",
-			"group": "secondary"
-		},
-		{
-			"id": "149-946-446-737-586",
-			"group": "secondary"
-		},
-		{
-			"id": "075-397-286-033-085",
-			"group": "secondary"
-		},
-		{
-			"id": "028-992-308-265-357",
-			"group": "secondary"
-		},
-		{
-			"id": "044-207-676-689-405",
-			"group": "secondary"
-		},
-		{
-			"id": "030-350-713-791-200",
-			"group": "secondary"
-		},
-		{
-			"id": "093-997-239-092-949",
-			"group": "secondary"
+			"id": "gamma_18",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 2
 		},
 		{
-			"id": "046-345-437-716-689",
-			"group": "secondary"
-		},
-		{
-			"id": "146-411-731-640-871",
-			"group": "secondary"
-		},
-		{
-			"id": "000-266-572-036-366",
-			"group": "secondary"
-		},
-		{
-			"id": "186-389-876-954-313",
-			"group": "secondary"
+			"id": "delta_18",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 2
 		},
 		{
-			"id": "168-483-508-794-377",
+			"id": "deimos_18_1",
 			"group": "secondary"
 		},
 		{
-			"id": "029-748-240-628-036",
+			"id": "mercury_18_2",
 			"group": "secondary"
 		},
 		{
-			"id": "184-507-509-452-559",
+			"id": "venus_18_3",
 			"group": "secondary"
 		},
 		{
-			"id": "069-961-069-943-549",
+			"id": "earth_18_4",
 			"group": "secondary"
 		},
 		{
-			"id": "017-777-392-752-199",
+			"id": "mars_18_5",
 			"group": "secondary"
 		},
 		{
-			"id": "000-150-893-948-804",
-			"group": "secondary"
-		},
-		{
-			"id": "027-437-502-794-894",
-			"group": "secondary"
-		},
-		{
-			"id": "074-789-039-135-70X",
-			"group": "secondary"
-		},
-		{
-			"id": "063-617-165-524-327",
-			"group": "secondary"
+			"id": "epsilon_19",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 4
 		},
 		{
-			"id": "019-872-586-012-269",
-			"group": "secondary"
+			"id": "zeta_19",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 4
 		},
 		{
-			"id": "103-648-347-913-447",
-			"group": "secondary"
+			"id": "eta_19",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 3
 		},
 		{
-			"id": "007-245-406-573-328",
+			"id": "jupiter_19_1",
 			"group": "secondary"
 		},
 		{
-			"id": "008-337-248-044-723",
+			"id": "saturn_19_2",
 			"group": "secondary"
 		},
 		{
-			"id": "197-071-041-313-103",
+			"id": "uranus_19_3",
 			"group": "secondary"
 		},
 		{
-			"id": "098-538-513-984-747",
+			"id": "neptune_19_4",
 			"group": "secondary"
 		},
 		{
-			"id": "019-125-805-246-964",
+			"id": "pluto_19_5",
 			"group": "secondary"
 		},
 		{
-			"id": "172-064-016-145-117",
+			"id": "ceres_19_6",
 			"group": "secondary"
 		},
 		{
-			"id": "007-417-942-335-284",
-			"group": "secondary"
+			"id": "theta_20",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 5
 		},
 		{
-			"id": "005-947-025-410-764",
-			"group": "secondary"
+			"id": "iota_20",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 4
 		},
 		{
-			"id": "116-404-026-640-450",
+			"id": "vesta_20_1",
 			"group": "secondary"
 		},
 		{
-			"id": "090-437-295-781-023",
+			"id": "pallas_20_2",
 			"group": "secondary"
 		},
 		{
-			"id": "197-158-559-918-854",
+			"id": "juno_20_3",
 			"group": "secondary"
 		},
 		{
-			"id": "076-225-263-850-117",
-			"group": "secondary"
+			"id": "kappa_21",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 2
 		},
 		{
-			"id": "049-199-509-181-561",
-			"group": "secondary"
+			"id": "lambda_21",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 2
 		},
 		{
-			"id": "179-045-041-176-506",
+			"id": "hygeia_21_1",
 			"group": "secondary"
 		},
 		{
-			"id": "004-301-778-674-378",
+			"id": "europa_21_2",
 			"group": "secondary"
 		},
 		{
-			"id": "111-313-231-732-367",
+			"id": "titan_21_3",
 			"group": "secondary"
 		},
 		{
-			"id": "092-197-031-561-353",
+			"id": "io_21_4",
 			"group": "secondary"
 		},
 		{
-			"id": "192-019-786-423-841",
+			"id": "ganymede_21_5",
 			"group": "secondary"
 		},
 		{
-			"id": "076-608-180-638-59X",
-			"group": "secondary"
+			"id": "mu_22",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 1
 		},
 		{
-			"id": "175-263-797-963-040",
-			"group": "secondary"
+			"id": "nu_22",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 5
 		},
 		{
-			"id": "141-694-167-791-759",
-			"group": "secondary"
+			"id": "xi_22",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 4
 		},
 		{
-			"id": "081-203-444-563-604",
+			"id": "callisto_22_1",
 			"group": "secondary"
 		},
 		{
-			"id": "125-348-249-762-351",
+			"id": "mimas_22_2",
 			"group": "secondary"
 		},
 		{
-			"id": "125-850-986-196-787",
+			"id": "enceladus_22_3",
 			"group": "secondary"
 		},
 		{
-			"id": "119-397-162-706-860",
+			"id": "tethys_22_4",
 			"group": "secondary"
 		},
 		{
-			"id": "133-023-408-974-285",
+			"id": "dione_22_5",
 			"group": "secondary"
 		},
 		{
-			"id": "039-847-299-166-952",
-			"group": "secondary"
+			"id": "omicron_23",
+			"group": "primary",
+			"radius": 1,
+			"citing_patents_count": 5
 		},
 		{
-			"id": "076-641-402-312-988",
+			"id": "rhea_23_1",
 			"group": "secondary"
 		},
 		{
-			"id": "102-485-198-725-150",
+			"id": "iapetus_23_2",
 			"group": "secondary"
 		},
 		{
-			"id": "168-829-456-947-639",
-			"group": "secondary"
+			"id": "pi_24",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 4
 		},
 		{
-			"id": "098-813-369-162-741",
-			"group": "secondary"
+			"id": "rho_24",
+			"group": "primary",
+			"radius": 1,
+			"citing_patents_count": 5
 		},
 		{
-			"id": "023-180-369-416-862",
+			"id": "ariel_24_1",
 			"group": "secondary"
 		},
 		{
-			"id": "189-473-046-734-005",
+			"id": "umbriel_24_2",
 			"group": "secondary"
 		},
 		{
-			"id": "019-633-684-883-828",
+			"id": "titania_24_3",
 			"group": "secondary"
 		},
 		{
-			"id": "174-501-376-407-235",
-			"group": "secondary"
+			"id": "sigma_25",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 4
 		},
 		{
-			"id": "129-062-448-949-030",
-			"group": "secondary"
+			"id": "tau_25",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 5
 		},
 		{
-			"id": "162-916-741-322-002",
+			"id": "oberon_25_1",
 			"group": "secondary"
 		},
 		{
-			"id": "080-026-305-809-343",
+			"id": "triton_25_2",
 			"group": "secondary"
 		},
 		{
-			"id": "016-698-167-713-829",
+			"id": "charon_25_3",
 			"group": "secondary"
 		},
 		{
-			"id": "091-325-080-234-401",
+			"id": "phobos_25_4",
 			"group": "secondary"
 		},
 		{
-			"id": "032-206-614-235-635",
-			"group": "secondary"
+			"id": "upsilon_26",
+			"group": "primary",
+			"radius": 1,
+			"citing_patents_count": 5
 		},
 		{
-			"id": "143-271-017-351-983",
+			"id": "deimos_26_1",
 			"group": "secondary"
 		},
 		{
-			"id": "169-312-245-869-778",
+			"id": "mercury_26_2",
 			"group": "secondary"
 		},
 		{
-			"id": "089-818-979-077-305",
+			"id": "venus_26_3",
 			"group": "secondary"
 		},
 		{
-			"id": "187-517-157-601-239",
+			"id": "earth_26_4",
 			"group": "secondary"
 		},
 		{
-			"id": "111-583-988-147-450",
-			"group": "secondary"
+			"id": "phi_27",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 3
 		},
 		{
-			"id": "058-026-435-099-506",
+			"id": "mars_27_1",
 			"group": "secondary"
 		},
 		{
-			"id": "153-651-762-444-327",
+			"id": "jupiter_27_2",
 			"group": "secondary"
 		},
 		{
-			"id": "159-766-711-047-610",
+			"id": "saturn_27_3",
 			"group": "secondary"
 		},
 		{
-			"id": "058-933-099-316-100",
+			"id": "uranus_27_4",
 			"group": "secondary"
 		},
 		{
-			"id": "023-452-662-674-373",
-			"group": "secondary"
+			"id": "chi_28",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 4
 		},
 		{
-			"id": "047-432-030-246-04X",
-			"group": "secondary"
+			"id": "psi_28",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 3
 		},
 		{
-			"id": "139-008-712-602-518",
+			"id": "neptune_28_1",
 			"group": "secondary"
 		},
 		{
-			"id": "137-720-748-139-162",
+			"id": "pluto_28_2",
 			"group": "secondary"
 		},
 		{
-			"id": "192-136-893-476-749",
+			"id": "ceres_28_3",
 			"group": "secondary"
 		},
 		{
-			"id": "172-890-893-515-719",
-			"group": "secondary"
+			"id": "omega_29",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 2
 		},
 		{
-			"id": "104-472-615-006-481",
+			"id": "vesta_29_1",
 			"group": "secondary"
 		},
 		{
-			"id": "097-374-332-908-898",
+			"id": "pallas_29_2",
 			"group": "secondary"
 		},
 		{
-			"id": "034-416-075-094-770",
-			"group": "secondary"
+			"id": "apollo_30",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 3
 		},
 		{
-			"id": "127-642-274-375-054",
+			"id": "juno_30_1",
 			"group": "secondary"
 		},
 		{
-			"id": "036-708-909-192-156",
+			"id": "hygeia_30_2",
 			"group": "secondary"
 		},
 		{
-			"id": "193-863-590-855-263",
-			"group": "secondary"
+			"id": "atlas_31",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 5
 		},
 		{
-			"id": "150-028-859-997-047",
+			"id": "europa_31_1",
 			"group": "secondary"
 		},
 		{
-			"id": "132-394-716-226-832",
+			"id": "titan_31_2",
 			"group": "secondary"
 		},
 		{
-			"id": "131-238-819-455-784",
+			"id": "io_31_3",
 			"group": "secondary"
 		},
 		{
-			"id": "155-402-461-387-483",
+			"id": "ganymede_31_4",
 			"group": "secondary"
 		},
 		{
-			"id": "040-389-070-176-191",
-			"group": "secondary"
+			"id": "orion_32",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 5
 		},
 		{
-			"id": "076-478-479-475-120",
+			"id": "callisto_32_1",
 			"group": "secondary"
 		},
 		{
-			"id": "034-190-802-321-708",
+			"id": "mimas_32_2",
 			"group": "secondary"
 		},
 		{
-			"id": "130-316-719-983-242",
+			"id": "enceladus_32_3",
 			"group": "secondary"
 		},
 		{
-			"id": "036-668-261-470-040",
-			"group": "secondary"
+			"id": "perseus_33",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 2
 		},
 		{
-			"id": "183-767-289-461-131",
+			"id": "tethys_33_1",
 			"group": "secondary"
 		},
 		{
-			"id": "107-556-164-321-147",
+			"id": "dione_33_2",
 			"group": "secondary"
 		},
 		{
-			"id": "066-190-726-252-149",
+			"id": "rhea_33_3",
 			"group": "secondary"
 		},
 		{
-			"id": "140-900-012-438-14X",
+			"id": "iapetus_33_4",
 			"group": "secondary"
 		},
 		{
-			"id": "058-438-690-312-096",
-			"group": "secondary"
+			"id": "hercules_34",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 2
 		},
 		{
-			"id": "004-889-112-130-518",
+			"id": "ariel_34_1",
 			"group": "secondary"
 		},
 		{
-			"id": "193-040-307-473-220",
+			"id": "umbriel_34_2",
 			"group": "secondary"
 		},
 		{
-			"id": "188-718-220-131-362",
+			"id": "titania_34_3",
 			"group": "secondary"
 		},
 		{
-			"id": "087-577-350-425-176",
-			"group": "secondary"
+			"id": "alpha_35",
+			"group": "primary",
+			"radius": 1,
+			"citing_patents_count": 5
 		},
 		{
-			"id": "191-670-060-004-126",
-			"group": "secondary"
+			"id": "beta_35",
+			"group": "primary",
+			"radius": 1,
+			"citing_patents_count": 3
 		},
 		{
-			"id": "041-699-843-843-567",
+			"id": "oberon_35_1",
 			"group": "secondary"
 		},
 		{
-			"id": "180-366-233-781-99X",
+			"id": "triton_35_2",
 			"group": "secondary"
 		},
 		{
-			"id": "122-739-962-072-793",
+			"id": "charon_35_3",
 			"group": "secondary"
 		},
 		{
-			"id": "109-274-898-147-341",
+			"id": "phobos_35_4",
 			"group": "secondary"
 		},
 		{
-			"id": "124-179-501-005-870",
-			"group": "secondary"
+			"id": "gamma_36",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 3
 		},
 		{
-			"id": "008-694-981-426-172",
-			"group": "secondary"
+			"id": "delta_36",
+			"group": "primary",
+			"radius": 1,
+			"citing_patents_count": 3
 		},
 		{
-			"id": "109-611-546-954-080",
+			"id": "deimos_36_1",
 			"group": "secondary"
 		},
 		{
-			"id": "004-378-254-734-355",
+			"id": "mercury_36_2",
 			"group": "secondary"
 		},
 		{
-			"id": "133-997-520-845-569",
+			"id": "venus_36_3",
 			"group": "secondary"
 		},
 		{
-			"id": "115-381-943-359-61X",
+			"id": "earth_36_4",
 			"group": "secondary"
 		},
 		{
-			"id": "022-078-711-389-998",
-			"group": "secondary"
+			"id": "epsilon_37",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 1
 		},
 		{
-			"id": "132-854-391-972-865",
-			"group": "secondary"
+			"id": "zeta_37",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 3
 		},
 		{
-			"id": "171-143-110-884-468",
-			"group": "secondary"
+			"id": "eta_37",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 5
 		},
 		{
-			"id": "003-946-199-636-328",
+			"id": "mars_37_1",
 			"group": "secondary"
 		},
 		{
-			"id": "009-649-401-227-606",
+			"id": "jupiter_37_2",
 			"group": "secondary"
 		},
 		{
-			"id": "170-042-571-881-121",
+			"id": "saturn_37_3",
 			"group": "secondary"
 		},
 		{
-			"id": "033-301-273-471-462",
+			"id": "uranus_37_4",
 			"group": "secondary"
 		},
 		{
-			"id": "040-826-560-477-838",
+			"id": "neptune_37_5",
 			"group": "secondary"
 		},
 		{
-			"id": "135-293-472-746-415",
-			"group": "secondary"
+			"id": "theta_38",
+			"group": "primary",
+			"radius": 1,
+			"citing_patents_count": 1
 		},
 		{
-			"id": "153-999-081-812-523",
-			"group": "secondary"
+			"id": "iota_38",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 1
 		},
 		{
-			"id": "000-498-778-953-787",
+			"id": "pluto_38_1",
 			"group": "secondary"
 		},
 		{
-			"id": "085-065-777-135-758",
+			"id": "ceres_38_2",
 			"group": "secondary"
 		},
 		{
-			"id": "152-366-692-522-975",
+			"id": "vesta_38_3",
 			"group": "secondary"
 		},
 		{
-			"id": "167-869-142-610-582",
+			"id": "pallas_38_4",
 			"group": "secondary"
 		},
 		{
-			"id": "191-676-336-200-724",
-			"group": "secondary"
+			"id": "kappa_39",
+			"group": "primary",
+			"radius": 1,
+			"citing_patents_count": 3
 		},
 		{
-			"id": "056-387-403-639-935",
+			"id": "juno_39_1",
 			"group": "secondary"
 		},
 		{
-			"id": "066-841-401-628-941",
+			"id": "hygeia_39_2",
 			"group": "secondary"
 		},
 		{
-			"id": "069-503-782-573-055",
+			"id": "europa_39_3",
 			"group": "secondary"
 		},
 		{
-			"id": "028-137-796-142-577",
-			"group": "secondary"
+			"id": "lambda_40",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 1
 		},
 		{
-			"id": "197-678-301-596-236",
+			"id": "titan_40_1",
 			"group": "secondary"
 		},
 		{
-			"id": "147-466-934-435-143",
+			"id": "io_40_2",
 			"group": "secondary"
 		},
 		{
-			"id": "114-647-123-099-321",
+			"id": "ganymede_40_3",
 			"group": "secondary"
 		},
 		{
-			"id": "058-829-130-504-901",
-			"group": "secondary"
+			"id": "mu_41",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 1
 		},
 		{
-			"id": "169-953-034-717-264",
+			"id": "callisto_41_1",
 			"group": "secondary"
 		},
 		{
-			"id": "028-012-588-449-727",
+			"id": "mimas_41_2",
 			"group": "secondary"
 		},
 		{
-			"id": "038-839-140-589-623",
-			"group": "secondary"
+			"id": "nu_42",
+			"group": "primary",
+			"radius": 2,
+			"citing_patents_count": 3
 		},
 		{
-			"id": "194-924-906-201-593",
-			"group": "secondary"
+			"id": "xi_42",
+			"group": "primary",
+			"radius": 3,
+			"citing_patents_count": 2
 		},
 		{
-			"id": "195-611-964-620-410",
+			"id": "enceladus_42_1",
 			"group": "secondary"
 		},
 		{
-			"id": "025-014-524-538-421",
+			"id": "tethys_42_2",
 			"group": "secondary"
 		},
 		{
-			"id": "120-667-268-642-909",
+			"id": "dione_42_3",
 			"group": "secondary"
 		},
 		{
-			"id": "163-117-320-460-138",
+			"id": "rhea_42_4",
 			"group": "secondary"
 		},
 		{
-			"id": "191-290-593-697-506",
+			"id": "iapetus_42_5",
 			"group": "secondary"
 		},
 		{
-			"id": "118-339-847-530-982",
-			"group": "secondary"
+			"id": "omicron_43",
+			"group": "primary",
+			"radius": 1,
+			"citing_patents_count": 3
 		},
 		{
-			"id": "073-318-370-112-877",
-			"group": "secondary"
+			"id": "pi_43",
+			"group": "primary",
+			"radius": 1,
+			"citing_patents_count": 2
 		},
 		{
-			"id": "113-828-920-381-078",
+			"id": "ariel_43_1",
 			"group": "secondary"
 		},
 		{
-			"id": "048-983-957-537-421",
+			"id": "umbriel_43_2",
 			"group": "secondary"
 		},
 		{
-			"id": "073-531-962-083-670",
+			"id": "titania_43_3",
 			"group": "secondary"
 		}
 	],
 	"links": [
 		{
-			"source": "alpha",
-			"target": "109-294-662-661-65X",
-			"value": 2
-		},
-		{
-			"source": "alpha",
-			"target": "074-937-457-594-345",
-			"value": 2
-		},
-		{
-			"source": "beta",
-			"target": "081-355-367-506-27X",
-			"value": 2
-		},
-		{
-			"source": "gamma",
-			"target": "048-634-530-447-798",
-			"value": 2
-		},
-		{
-			"source": "delta",
-			"target": "137-231-469-269-151",
-			"value": 2
-		},
-		{
-			"source": "epsilon",
-			"target": "031-072-815-607-16X",
-			"value": 2
-		},
-		{
-			"source": "epsilon",
-			"target": "105-312-070-982-098",
-			"value": 2
-		},
-		{
-			"source": "epsilon",
-			"target": "018-515-082-074-296",
-			"value": 2
-		},
-		{
-			"source": "zeta",
-			"target": "027-228-373-793-594",
-			"value": 2
-		},
-		{
-			"source": "eta",
-			"target": "016-712-604-622-721",
-			"value": 2
-		},
-		{
-			"source": "theta",
-			"target": "086-316-087-480-933",
-			"value": 2
-		},
-		{
-			"source": "iota",
-			"target": "118-309-833-112-117",
-			"value": 2
-		},
-		{
-			"source": "kappa",
-			"target": "134-672-819-080-83X",
-			"value": 2
-		},
-		{
-			"source": "lambda",
-			"target": "036-789-224-520-054",
-			"value": 2
-		},
-		{
-			"source": "mu",
-			"target": "106-594-488-484-12X",
-			"value": 2
-		},
-		{
-			"source": "nu",
-			"target": "125-726-727-125-409",
-			"value": 2
-		},
-		{
-			"source": "xi",
-			"target": "161-487-188-181-03X",
-			"value": 2
-		},
-		{
-			"source": "xi",
-			"target": "076-538-237-089-675",
-			"value": 2
-		},
-		{
-			"source": "xi",
-			"target": "051-324-518-696-462",
-			"value": 2
-		},
-		{
-			"source": "xi",
-			"target": "198-017-973-913-570",
-			"value": 2
-		},
-		{
-			"source": "xi",
-			"target": "156-653-831-632-101",
-			"value": 2
-		},
-		{
-			"source": "xi",
-			"target": "178-739-712-688-618",
-			"value": 2
-		},
-		{
-			"source": "xi",
-			"target": "048-634-530-447-798",
-			"value": 2
-		},
-		{
-			"source": "omicron",
-			"target": "131-486-498-702-07X",
-			"value": 2
-		},
-		{
-			"source": "omicron",
-			"target": "010-031-167-075-106",
-			"value": 2
-		},
-		{
-			"source": "pi",
-			"target": "119-453-428-180-987",
-			"value": 2
-		},
-		{
-			"source": "rho",
-			"target": "016-712-604-622-721",
-			"value": 2
-		},
-		{
-			"source": "sigma",
-			"target": "153-595-914-216-97X",
-			"value": 2
-		},
-		{
-			"source": "sigma",
-			"target": "148-353-591-913-750",
-			"value": 2
-		},
-		{
-			"source": "sigma",
-			"target": "019-827-938-996-490",
-			"value": 2
-		},
-		{
-			"source": "tau",
-			"target": "184-646-935-269-773",
-			"value": 2
-		},
-		{
-			"source": "tau",
-			"target": "186-230-275-872-748",
-			"value": 2
-		},
-		{
-			"source": "tau",
-			"target": "165-291-395-706-725",
-			"value": 2
-		},
-		{
-			"source": "tau",
-			"target": "047-113-007-956-15X",
-			"value": 2
-		},
-		{
-			"source": "tau",
-			"target": "089-019-916-582-397",
-			"value": 2
-		},
-		{
-			"source": "tau",
-			"target": "136-000-598-663-919",
-			"value": 2
-		},
-		{
-			"source": "upsilon",
-			"target": "051-072-189-723-758",
-			"value": 2
-		},
-		{
-			"source": "phi",
-			"target": "040-766-915-457-886",
-			"value": 2
-		},
-		{
-			"source": "phi",
-			"target": "141-482-415-400-338",
-			"value": 2
-		},
-		{
-			"source": "chi",
-			"target": "149-129-599-518-595",
-			"value": 2
-		},
-		{
-			"source": "chi",
-			"target": "156-286-485-464-499",
-			"value": 2
-		},
-		{
-			"source": "psi",
-			"target": "001-353-214-346-040",
-			"value": 2
-		},
-		{
-			"source": "psi",
-			"target": "118-479-143-842-720",
-			"value": 2
-		},
-		{
-			"source": "psi",
-			"target": "007-641-959-106-118",
-			"value": 2
+			"source": "beta_1",
+			"target": "mercury_1_1",
+			"value": 3
 		},
 		{
-			"source": "psi",
-			"target": "189-040-066-278-226",
-			"value": 2
-		},
-		{
-			"source": "omega",
-			"target": "106-594-488-484-12X",
-			"value": 2
-		},
-		{
-			"source": "apollo",
-			"target": "026-244-336-682-442",
-			"value": 2
-		},
-		{
-			"source": "artemis",
-			"target": "074-937-457-594-345",
-			"value": 2
-		},
-		{
-			"source": "artemis",
-			"target": "168-286-254-597-740",
-			"value": 2
+			"source": "alpha_1",
+			"target": "mercury_1_1",
+			"value": 1
 		},
 		{
-			"source": "athena",
-			"target": "109-916-358-959-05X",
+			"source": "alpha_1",
+			"target": "venus_1_2",
 			"value": 2
 		},
 		{
-			"source": "demeter",
-			"target": "002-458-268-309-533",
+			"source": "beta_1",
+			"target": "venus_1_2",
 			"value": 2
 		},
 		{
-			"source": "dionysus",
-			"target": "038-310-729-099-192",
-			"value": 2
+			"source": "beta_1",
+			"target": "earth_1_3",
+			"value": 1
 		},
 		{
-			"source": "dionysus",
-			"target": "179-033-965-606-598",
-			"value": 2
+			"source": "gamma_1",
+			"target": "earth_1_3",
+			"value": 3
 		},
 		{
-			"source": "dionysus",
-			"target": "113-229-447-433-64X",
-			"value": 2
+			"source": "alpha_1",
+			"target": "mars_1_4",
+			"value": 3
 		},
 		{
-			"source": "dionysus",
-			"target": "077-771-399-719-227",
-			"value": 2
+			"source": "beta_1",
+			"target": "jupiter_1_5",
+			"value": 1
 		},
 		{
-			"source": "dionysus",
-			"target": "183-966-651-664-305",
+			"source": "delta_2",
+			"target": "saturn_2_1",
 			"value": 2
 		},
 		{
-			"source": "dionysus",
-			"target": "013-467-292-050-692",
-			"value": 2
+			"source": "delta_2",
+			"target": "uranus_2_2",
+			"value": 1
 		},
 		{
-			"source": "hades",
-			"target": "079-314-054-163-947",
-			"value": 2
+			"source": "delta_2",
+			"target": "neptune_2_3",
+			"value": 3
 		},
 		{
-			"source": "hades",
-			"target": "110-082-309-221-187",
-			"value": 2
+			"source": "saturn_2_1",
+			"target": "uranus_2_2",
+			"value": 1
 		},
 		{
-			"source": "hera",
-			"target": "128-382-566-327-896",
+			"source": "uranus_2_2",
+			"target": "neptune_2_3",
 			"value": 2
 		},
 		{
-			"source": "hera",
-			"target": "143-543-676-408-839",
-			"value": 2
+			"source": "epsilon_3",
+			"target": "pluto_3_1",
+			"value": 3
 		},
 		{
-			"source": "hermes",
-			"target": "005-743-260-244-802",
-			"value": 2
+			"source": "epsilon_3",
+			"target": "ceres_3_2",
+			"value": 1
 		},
 		{
-			"source": "hestia",
-			"target": "026-638-223-054-804",
+			"source": "zeta_3",
+			"target": "ceres_3_2",
 			"value": 2
 		},
 		{
-			"source": "poseidon",
-			"target": "048-208-660-423-215",
+			"source": "zeta_3",
+			"target": "vesta_3_3",
 			"value": 2
 		},
 		{
-			"source": "zeus",
-			"target": "159-658-602-048-982",
-			"value": 2
+			"source": "zeta_3",
+			"target": "pallas_3_4",
+			"value": 3
 		},
 		{
-			"source": "ares",
-			"target": "077-811-145-153-079",
-			"value": 2
+			"source": "epsilon_3",
+			"target": "zeta_3",
+			"value": 1
 		},
 		{
-			"source": "ares",
-			"target": "170-781-236-728-970",
-			"value": 2
+			"source": "pluto_3_1",
+			"target": "pallas_3_4",
+			"value": 1
 		},
 		{
-			"source": "ares",
-			"target": "144-284-594-583-951",
-			"value": 2
+			"source": "eta_4",
+			"target": "juno_4_1",
+			"value": 3
 		},
 		{
-			"source": "aphrodite",
-			"target": "139-409-891-293-77X",
-			"value": 2
+			"source": "eta_4",
+			"target": "hygeia_4_2",
+			"value": 1
 		},
 		{
-			"source": "hephaestus",
-			"target": "110-082-309-221-187",
+			"source": "eta_4",
+			"target": "europa_4_3",
 			"value": 2
 		},
 		{
-			"source": "mercury",
-			"target": "081-017-751-048-013",
-			"value": 2
+			"source": "eta_4",
+			"target": "titan_4_4",
+			"value": 3
 		},
 		{
-			"source": "mercury",
-			"target": "114-963-910-586-828",
-			"value": 2
+			"source": "juno_4_1",
+			"target": "hygeia_4_2",
+			"value": 1
 		},
 		{
-			"source": "mercury",
-			"target": "162-513-842-046-362",
-			"value": 2
+			"source": "hygeia_4_2",
+			"target": "europa_4_3",
+			"value": 1
 		},
 		{
-			"source": "venus",
-			"target": "188-803-921-043-695",
-			"value": 2
+			"source": "theta_5",
+			"target": "io_5_1",
+			"value": 1
 		},
 		{
-			"source": "mars",
-			"target": "191-147-881-232-285",
+			"source": "theta_5",
+			"target": "ganymede_5_2",
 			"value": 2
 		},
 		{
-			"source": "mars",
-			"target": "081-817-015-173-962",
-			"value": 2
+			"source": "iota_5",
+			"target": "ganymede_5_2",
+			"value": 1
 		},
 		{
-			"source": "jupiter",
-			"target": "106-530-060-683-82X",
-			"value": 2
+			"source": "iota_5",
+			"target": "callisto_5_3",
+			"value": 3
 		},
 		{
-			"source": "jupiter",
-			"target": "133-935-409-400-672",
-			"value": 2
+			"source": "theta_5",
+			"target": "iota_5",
+			"value": 1
 		},
 		{
-			"source": "saturn",
-			"target": "046-588-899-387-353",
-			"value": 2
+			"source": "mu_6",
+			"target": "mimas_6_1",
+			"value": 3
 		},
 		{
-			"source": "saturn",
-			"target": "051-324-518-696-462",
-			"value": 2
+			"source": "lambda_6",
+			"target": "mimas_6_1",
+			"value": 3
 		},
 		{
-			"source": "saturn",
-			"target": "161-487-188-181-03X",
-			"value": 2
+			"source": "mu_6",
+			"target": "enceladus_6_2",
+			"value": 3
 		},
 		{
-			"source": "saturn",
-			"target": "156-653-831-632-101",
-			"value": 2
+			"source": "kappa_6",
+			"target": "tethys_6_3",
+			"value": 1
 		},
 		{
-			"source": "saturn",
-			"target": "198-017-973-913-570",
-			"value": 2
+			"source": "mu_6",
+			"target": "dione_6_4",
+			"value": 3
 		},
 		{
-			"source": "saturn",
-			"target": "076-538-237-089-675",
-			"value": 2
+			"source": "mu_6",
+			"target": "rhea_6_5",
+			"value": 1
 		},
 		{
-			"source": "saturn",
-			"target": "198-017-973-913-570",
-			"value": 2
+			"source": "lambda_6",
+			"target": "rhea_6_5",
+			"value": 1
 		},
 		{
-			"source": "saturn",
-			"target": "076-538-237-089-675",
-			"value": 2
+			"source": "mu_6",
+			"target": "iapetus_6_6",
+			"value": 1
 		},
 		{
-			"source": "saturn",
-			"target": "051-324-518-696-462",
-			"value": 2
+			"source": "kappa_6",
+			"target": "iapetus_6_6",
+			"value": 1
 		},
 		{
-			"source": "saturn",
-			"target": "161-487-188-181-03X",
+			"source": "iapetus_6_6",
+			"target": "mimas_6_1",
 			"value": 2
 		},
 		{
-			"source": "saturn",
-			"target": "156-653-831-632-101",
+			"source": "nu_7",
+			"target": "ariel_7_1",
 			"value": 2
 		},
 		{
-			"source": "uranus",
-			"target": "049-222-171-973-678",
-			"value": 2
+			"source": "nu_7",
+			"target": "umbriel_7_2",
+			"value": 3
 		},
 		{
-			"source": "uranus",
-			"target": "074-598-665-914-143",
-			"value": 2
+			"source": "pi_8",
+			"target": "titania_8_1",
+			"value": 1
 		},
 		{
-			"source": "neptune",
-			"target": "161-487-188-181-03X",
-			"value": 2
+			"source": "pi_8",
+			"target": "oberon_8_2",
+			"value": 1
 		},
 		{
-			"source": "neptune",
-			"target": "156-653-831-632-101",
+			"source": "omicron_8",
+			"target": "triton_8_3",
 			"value": 2
 		},
 		{
-			"source": "neptune",
-			"target": "051-324-518-696-462",
-			"value": 2
+			"source": "xi_8",
+			"target": "triton_8_3",
+			"value": 3
 		},
 		{
-			"source": "pluto",
-			"target": "190-195-697-065-907",
-			"value": 2
+			"source": "omicron_8",
+			"target": "charon_8_4",
+			"value": 3
 		},
 		{
-			"source": "pluto",
-			"target": "031-461-589-086-771",
-			"value": 2
+			"source": "xi_8",
+			"target": "phobos_8_5",
+			"value": 1
 		},
 		{
-			"source": "comet",
-			"target": "167-851-091-520-257",
-			"value": 2
+			"source": "pi_8",
+			"target": "phobos_8_5",
+			"value": 3
 		},
 		{
-			"source": "nebula",
-			"target": "151-760-923-304-502",
+			"source": "oberon_8_2",
+			"target": "charon_8_4",
 			"value": 2
 		},
 		{
-			"source": "galaxy",
-			"target": "097-019-537-894-104",
-			"value": 2
+			"source": "rho_9",
+			"target": "deimos_9_1",
+			"value": 3
 		},
 		{
-			"source": "galaxy",
-			"target": "170-696-774-214-700",
-			"value": 2
+			"source": "rho_9",
+			"target": "mercury_9_2",
+			"value": 3
 		},
 		{
-			"source": "quasar",
-			"target": "084-807-525-209-072",
+			"source": "deimos_9_1",
+			"target": "mercury_9_2",
 			"value": 2
 		},
 		{
-			"source": "pulsar",
-			"target": "044-648-704-787-12X",
-			"value": 2
+			"source": "tau_10",
+			"target": "earth_10_1",
+			"value": 1
 		},
 		{
-			"source": "starlight",
-			"target": "001-353-214-346-040",
+			"source": "upsilon_10",
+			"target": "earth_10_1",
 			"value": 2
 		},
 		{
-			"source": "starlight",
-			"target": "150-822-190-827-131",
-			"value": 2
+			"source": "upsilon_10",
+			"target": "mars_10_2",
+			"value": 1
 		},
 		{
-			"source": "starlight",
-			"target": "051-919-508-851-10X",
+			"source": "tau_10",
+			"target": "mars_10_2",
 			"value": 2
 		},
 		{
-			"source": "moonbeam",
-			"target": "036-789-224-520-054",
+			"source": "sigma_10",
+			"target": "jupiter_10_3",
 			"value": 2
 		},
 		{
-			"source": "moonbeam",
-			"target": "036-251-116-198-69X",
-			"value": 2
+			"source": "sigma_10",
+			"target": "saturn_10_4",
+			"value": 1
 		},
 		{
-			"source": "sunray",
-			"target": "149-946-446-737-586",
+			"source": "upsilon_10",
+			"target": "saturn_10_4",
 			"value": 2
 		},
 		{
-			"source": "sunray",
-			"target": "075-397-286-033-085",
+			"source": "sigma_10",
+			"target": "tau_10",
 			"value": 2
 		},
 		{
-			"source": "sunray",
-			"target": "028-992-308-265-357",
+			"source": "phi_11",
+			"target": "uranus_11_1",
 			"value": 2
 		},
 		{
-			"source": "sunray",
-			"target": "044-207-676-689-405",
-			"value": 2
+			"source": "phi_11",
+			"target": "neptune_11_2",
+			"value": 1
 		},
 		{
-			"source": "sunray",
-			"target": "030-350-713-791-200",
-			"value": 2
+			"source": "phi_11",
+			"target": "pluto_11_3",
+			"value": 3
 		},
 		{
-			"source": "aurora",
-			"target": "093-997-239-092-949",
-			"value": 2
+			"source": "uranus_11_1",
+			"target": "neptune_11_2",
+			"value": 1
 		},
 		{
-			"source": "aurora",
-			"target": "046-345-437-716-689",
-			"value": 2
+			"source": "neptune_11_2",
+			"target": "pluto_11_3",
+			"value": 1
 		},
 		{
-			"source": "aurora",
-			"target": "146-411-731-640-871",
+			"source": "chi_12",
+			"target": "vesta_12_1",
 			"value": 2
 		},
 		{
-			"source": "cosmic",
-			"target": "000-266-572-036-366",
+			"source": "chi_12",
+			"target": "pallas_12_2",
 			"value": 2
 		},
 		{
-			"source": "quantum",
-			"target": "186-389-876-954-313",
-			"value": 2
+			"source": "chi_12",
+			"target": "juno_12_3",
+			"value": 3
 		},
 		{
-			"source": "photon",
-			"target": "168-483-508-794-377",
-			"value": 2
+			"source": "chi_12",
+			"target": "hygeia_12_4",
+			"value": 1
 		},
 		{
-			"source": "neutron",
-			"target": "029-748-240-628-036",
-			"value": 2
+			"source": "vesta_12_1",
+			"target": "pallas_12_2",
+			"value": 1
 		},
 		{
-			"source": "proton",
-			"target": "184-507-509-452-559",
+			"source": "psi_13",
+			"target": "europa_13_1",
 			"value": 2
 		},
 		{
-			"source": "electron",
-			"target": "069-961-069-943-549",
+			"source": "psi_13",
+			"target": "titan_13_2",
 			"value": 2
 		},
 		{
-			"source": "atom",
-			"target": "017-777-392-752-199",
-			"value": 2
+			"source": "omega_13",
+			"target": "titan_13_2",
+			"value": 3
 		},
 		{
-			"source": "atom",
-			"target": "000-150-893-948-804",
+			"source": "omega_13",
+			"target": "io_13_3",
 			"value": 2
 		},
 		{
-			"source": "atom",
-			"target": "027-437-502-794-894",
+			"source": "omega_13",
+			"target": "ganymede_13_4",
 			"value": 2
 		},
 		{
-			"source": "atom",
-			"target": "074-789-039-135-70X",
+			"source": "apollo_14",
+			"target": "callisto_14_1",
 			"value": 2
 		},
 		{
-			"source": "atom",
-			"target": "063-617-165-524-327",
-			"value": 2
+			"source": "atlas_14",
+			"target": "mimas_14_2",
+			"value": 1
 		},
 		{
-			"source": "atom",
-			"target": "019-872-586-012-269",
-			"value": 2
+			"source": "orion_14",
+			"target": "mimas_14_2",
+			"value": 3
 		},
 		{
-			"source": "atom",
-			"target": "103-648-347-913-447",
-			"value": 2
+			"source": "apollo_14",
+			"target": "enceladus_14_3",
+			"value": 1
 		},
 		{
-			"source": "atom",
-			"target": "007-245-406-573-328",
+			"source": "apollo_14",
+			"target": "tethys_14_4",
 			"value": 2
 		},
 		{
-			"source": "atom",
-			"target": "027-437-502-794-894",
-			"value": 2
+			"source": "atlas_14",
+			"target": "tethys_14_4",
+			"value": 3
 		},
 		{
-			"source": "atom",
-			"target": "008-337-248-044-723",
+			"source": "apollo_14",
+			"target": "atlas_14",
 			"value": 2
 		},
 		{
-			"source": "atom",
-			"target": "197-071-041-313-103",
+			"source": "callisto_14_1",
+			"target": "tethys_14_4",
 			"value": 2
 		},
 		{
-			"source": "atom",
-			"target": "098-538-513-984-747",
+			"source": "perseus_15",
+			"target": "dione_15_1",
 			"value": 2
 		},
 		{
-			"source": "molecule",
-			"target": "019-125-805-246-964",
-			"value": 2
+			"source": "perseus_15",
+			"target": "rhea_15_2",
+			"value": 1
 		},
 		{
-			"source": "molecule",
-			"target": "172-064-016-145-117",
-			"value": 2
+			"source": "perseus_15",
+			"target": "iapetus_15_3",
+			"value": 1
 		},
 		{
-			"source": "molecule",
-			"target": "007-417-942-335-284",
-			"value": 2
+			"source": "hercules_15",
+			"target": "iapetus_15_3",
+			"value": 3
 		},
 		{
-			"source": "crystal",
-			"target": "005-947-025-410-764",
-			"value": 2
+			"source": "hercules_15",
+			"target": "ariel_15_4",
+			"value": 3
 		},
 		{
-			"source": "crystal",
-			"target": "116-404-026-640-450",
-			"value": 2
+			"source": "hercules_15",
+			"target": "umbriel_15_5",
+			"value": 3
 		},
 		{
-			"source": "plasma",
-			"target": "090-437-295-781-023",
+			"source": "perseus_15",
+			"target": "hercules_15",
 			"value": 2
 		},
 		{
-			"source": "plasma",
-			"target": "197-158-559-918-854",
-			"value": 2
+			"source": "dione_15_1",
+			"target": "iapetus_15_3",
+			"value": 1
 		},
 		{
-			"source": "plasma",
-			"target": "076-225-263-850-117",
+			"source": "alpha_16",
+			"target": "titania_16_1",
 			"value": 2
 		},
 		{
-			"source": "plasma",
-			"target": "049-199-509-181-561",
+			"source": "alpha_16",
+			"target": "oberon_16_2",
 			"value": 2
 		},
 		{
-			"source": "plasma",
-			"target": "179-045-041-176-506",
-			"value": 2
+			"source": "beta_17",
+			"target": "triton_17_1",
+			"value": 3
 		},
 		{
-			"source": "plasma",
-			"target": "004-301-778-674-378",
+			"source": "beta_17",
+			"target": "charon_17_2",
 			"value": 2
 		},
 		{
-			"source": "fusion",
-			"target": "111-313-231-732-367",
-			"value": 2
+			"source": "triton_17_1",
+			"target": "charon_17_2",
+			"value": 1
 		},
 		{
-			"source": "fission",
-			"target": "092-197-031-561-353",
-			"value": 2
+			"source": "gamma_18",
+			"target": "deimos_18_1",
+			"value": 3
 		},
 		{
-			"source": "fission",
-			"target": "192-019-786-423-841",
-			"value": 2
+			"source": "gamma_18",
+			"target": "mercury_18_2",
+			"value": 3
 		},
 		{
-			"source": "fission",
-			"target": "192-019-786-423-841",
-			"value": 2
+			"source": "gamma_18",
+			"target": "venus_18_3",
+			"value": 1
 		},
 		{
-			"source": "fission",
-			"target": "076-608-180-638-59X",
+			"source": "delta_18",
+			"target": "venus_18_3",
 			"value": 2
 		},
 		{
-			"source": "fission",
-			"target": "175-263-797-963-040",
-			"value": 2
+			"source": "delta_18",
+			"target": "earth_18_4",
+			"value": 1
 		},
 		{
-			"source": "fission",
-			"target": "092-197-031-561-353",
-			"value": 2
+			"source": "delta_18",
+			"target": "mars_18_5",
+			"value": 1
 		},
 		{
-			"source": "energy",
-			"target": "141-694-167-791-759",
-			"value": 2
+			"source": "gamma_18",
+			"target": "delta_18",
+			"value": 1
 		},
 		{
-			"source": "energy",
-			"target": "081-203-444-563-604",
-			"value": 2
+			"source": "deimos_18_1",
+			"target": "mercury_18_2",
+			"value": 1
 		},
 		{
-			"source": "energy",
-			"target": "125-348-249-762-351",
+			"source": "epsilon_19",
+			"target": "jupiter_19_1",
 			"value": 2
 		},
 		{
-			"source": "energy",
-			"target": "125-850-986-196-787",
-			"value": 2
+			"source": "eta_19",
+			"target": "saturn_19_2",
+			"value": 3
 		},
 		{
-			"source": "matter",
-			"target": "119-397-162-706-860",
-			"value": 2
+			"source": "zeta_19",
+			"target": "uranus_19_3",
+			"value": 1
 		},
 		{
-			"source": "void",
-			"target": "133-023-408-974-285",
-			"value": 2
+			"source": "eta_19",
+			"target": "neptune_19_4",
+			"value": 1
 		},
 		{
-			"source": "void",
-			"target": "039-847-299-166-952",
-			"value": 2
+			"source": "zeta_19",
+			"target": "neptune_19_4",
+			"value": 3
 		},
 		{
-			"source": "stellar",
-			"target": "076-641-402-312-988",
-			"value": 2
+			"source": "eta_19",
+			"target": "pluto_19_5",
+			"value": 1
 		},
 		{
-			"source": "stellar",
-			"target": "102-485-198-725-150",
-			"value": 2
+			"source": "epsilon_19",
+			"target": "pluto_19_5",
+			"value": 1
 		},
 		{
-			"source": "stellar",
-			"target": "168-829-456-947-639",
+			"source": "zeta_19",
+			"target": "ceres_19_6",
 			"value": 2
 		},
 		{
-			"source": "stellar",
-			"target": "098-813-369-162-741",
-			"value": 2
+			"source": "epsilon_19",
+			"target": "ceres_19_6",
+			"value": 3
 		},
 		{
-			"source": "stellar",
-			"target": "023-180-369-416-862",
+			"source": "theta_20",
+			"target": "vesta_20_1",
 			"value": 2
 		},
 		{
-			"source": "stellar",
-			"target": "189-473-046-734-005",
-			"value": 2
+			"source": "theta_20",
+			"target": "pallas_20_2",
+			"value": 1
 		},
 		{
-			"source": "stellar",
-			"target": "019-633-684-883-828",
-			"value": 2
+			"source": "iota_20",
+			"target": "pallas_20_2",
+			"value": 1
 		},
 		{
-			"source": "stellar",
-			"target": "174-501-376-407-235",
-			"value": 2
+			"source": "iota_20",
+			"target": "juno_20_3",
+			"value": 3
 		},
 		{
-			"source": "stellar",
-			"target": "129-062-448-949-030",
-			"value": 2
+			"source": "theta_20",
+			"target": "iota_20",
+			"value": 3
 		},
 		{
-			"source": "stellar",
-			"target": "162-916-741-322-002",
-			"value": 2
+			"source": "kappa_21",
+			"target": "hygeia_21_1",
+			"value": 1
 		},
 		{
-			"source": "stellar",
-			"target": "080-026-305-809-343",
-			"value": 2
+			"source": "kappa_21",
+			"target": "europa_21_2",
+			"value": 3
 		},
 		{
-			"source": "stellar",
-			"target": "016-698-167-713-829",
+			"source": "kappa_21",
+			"target": "titan_21_3",
 			"value": 2
 		},
 		{
-			"source": "stellar",
-			"target": "091-325-080-234-401",
-			"value": 2
+			"source": "lambda_21",
+			"target": "titan_21_3",
+			"value": 3
 		},
 		{
-			"source": "stellar",
-			"target": "032-206-614-235-635",
-			"value": 2
+			"source": "lambda_21",
+			"target": "io_21_4",
+			"value": 3
 		},
 		{
-			"source": "stellar",
-			"target": "143-271-017-351-983",
-			"value": 2
+			"source": "lambda_21",
+			"target": "ganymede_21_5",
+			"value": 1
 		},
 		{
-			"source": "stellar",
-			"target": "169-312-245-869-778",
-			"value": 2
+			"source": "kappa_21",
+			"target": "lambda_21",
+			"value": 3
 		},
 		{
-			"source": "stellar",
-			"target": "089-818-979-077-305",
-			"value": 2
+			"source": "nu_22",
+			"target": "callisto_22_1",
+			"value": 3
 		},
 		{
-			"source": "stellar",
-			"target": "187-517-157-601-239",
-			"value": 2
+			"source": "nu_22",
+			"target": "mimas_22_2",
+			"value": 1
 		},
 		{
-			"source": "stellar",
-			"target": "111-583-988-147-450",
-			"value": 2
+			"source": "xi_22",
+			"target": "enceladus_22_3",
+			"value": 3
 		},
 		{
-			"source": "stellar",
-			"target": "058-026-435-099-506",
-			"value": 2
+			"source": "mu_22",
+			"target": "tethys_22_4",
+			"value": 1
 		},
 		{
-			"source": "stellar",
-			"target": "153-651-762-444-327",
+			"source": "nu_22",
+			"target": "tethys_22_4",
 			"value": 2
 		},
 		{
-			"source": "stellar",
-			"target": "159-766-711-047-610",
+			"source": "xi_22",
+			"target": "dione_22_5",
 			"value": 2
 		},
 		{
-			"source": "stellar",
-			"target": "058-933-099-316-100",
+			"source": "nu_22",
+			"target": "dione_22_5",
 			"value": 2
 		},
 		{
-			"source": "stellar",
-			"target": "023-452-662-674-373",
-			"value": 2
+			"source": "omicron_23",
+			"target": "rhea_23_1",
+			"value": 1
 		},
 		{
-			"source": "stellar",
-			"target": "047-432-030-246-04X",
+			"source": "omicron_23",
+			"target": "iapetus_23_2",
 			"value": 2
 		},
 		{
-			"source": "stellar",
-			"target": "139-008-712-602-518",
-			"value": 2
+			"source": "pi_24",
+			"target": "ariel_24_1",
+			"value": 3
 		},
 		{
-			"source": "stellar",
-			"target": "137-720-748-139-162",
-			"value": 2
+			"source": "pi_24",
+			"target": "umbriel_24_2",
+			"value": 3
 		},
 		{
-			"source": "stellar",
-			"target": "192-136-893-476-749",
-			"value": 2
+			"source": "rho_24",
+			"target": "umbriel_24_2",
+			"value": 1
 		},
 		{
-			"source": "stellar",
-			"target": "172-890-893-515-719",
+			"source": "rho_24",
+			"target": "titania_24_3",
 			"value": 2
 		},
 		{
-			"source": "lunar",
-			"target": "104-472-615-006-481",
-			"value": 2
+			"source": "sigma_25",
+			"target": "oberon_25_1",
+			"value": 3
 		},
 		{
-			"source": "lunar",
-			"target": "097-374-332-908-898",
+			"source": "sigma_25",
+			"target": "triton_25_2",
 			"value": 2
 		},
 		{
-			"source": "lunar",
-			"target": "034-416-075-094-770",
-			"value": 2
+			"source": "tau_25",
+			"target": "triton_25_2",
+			"value": 3
 		},
 		{
-			"source": "lunar",
-			"target": "127-642-274-375-054",
+			"source": "tau_25",
+			"target": "charon_25_3",
 			"value": 2
 		},
 		{
-			"source": "lunar",
-			"target": "036-708-909-192-156",
-			"value": 2
+			"source": "tau_25",
+			"target": "phobos_25_4",
+			"value": 3
 		},
 		{
-			"source": "lunar",
-			"target": "193-863-590-855-263",
+			"source": "sigma_25",
+			"target": "tau_25",
 			"value": 2
 		},
 		{
-			"source": "lunar",
-			"target": "150-028-859-997-047",
+			"source": "phobos_25_4",
+			"target": "triton_25_2",
 			"value": 2
 		},
 		{
-			"source": "lunar",
-			"target": "034-416-075-094-770",
+			"source": "upsilon_26",
+			"target": "deimos_26_1",
 			"value": 2
 		},
 		{
-			"source": "lunar",
-			"target": "097-374-332-908-898",
-			"value": 2
+			"source": "upsilon_26",
+			"target": "mercury_26_2",
+			"value": 3
 		},
 		{
-			"source": "lunar",
-			"target": "104-472-615-006-481",
-			"value": 2
+			"source": "upsilon_26",
+			"target": "venus_26_3",
+			"value": 1
 		},
 		{
-			"source": "lunar",
-			"target": "132-394-716-226-832",
-			"value": 2
+			"source": "upsilon_26",
+			"target": "earth_26_4",
+			"value": 3
 		},
 		{
-			"source": "solar",
-			"target": "168-483-508-794-377",
-			"value": 2
+			"source": "deimos_26_1",
+			"target": "mercury_26_2",
+			"value": 1
 		},
 		{
-			"source": "orbital",
-			"target": "131-238-819-455-784",
-			"value": 2
+			"source": "phi_27",
+			"target": "mars_27_1",
+			"value": 1
 		},
 		{
-			"source": "orbital",
-			"target": "155-402-461-387-483",
-			"value": 2
+			"source": "phi_27",
+			"target": "jupiter_27_2",
+			"value": 1
 		},
 		{
-			"source": "orbital",
-			"target": "040-389-070-176-191",
-			"value": 2
+			"source": "phi_27",
+			"target": "saturn_27_3",
+			"value": 1
 		},
 		{
-			"source": "orbital",
-			"target": "076-478-479-475-120",
-			"value": 2
+			"source": "mars_27_1",
+			"target": "jupiter_27_2",
+			"value": 1
 		},
 		{
-			"source": "meteor",
-			"target": "031-461-589-086-771",
-			"value": 2
+			"source": "uranus_27_4",
+			"target": "saturn_27_3",
+			"value": 1
 		},
 		{
-			"source": "meteor",
-			"target": "190-195-697-065-907",
-			"value": 2
+			"source": "chi_28",
+			"target": "neptune_28_1",
+			"value": 1
 		},
 		{
-			"source": "asteroid",
-			"target": "034-190-802-321-708",
+			"source": "chi_28",
+			"target": "pluto_28_2",
 			"value": 2
 		},
 		{
-			"source": "eclipse",
-			"target": "130-316-719-983-242",
-			"value": 2
+			"source": "psi_28",
+			"target": "pluto_28_2",
+			"value": 1
 		},
 		{
-			"source": "horizon",
-			"target": "076-478-479-475-120",
-			"value": 2
+			"source": "psi_28",
+			"target": "ceres_28_3",
+			"value": 3
 		},
 		{
-			"source": "horizon",
-			"target": "040-389-070-176-191",
-			"value": 2
+			"source": "omega_29",
+			"target": "vesta_29_1",
+			"value": 3
 		},
 		{
-			"source": "horizon",
-			"target": "036-668-261-470-040",
+			"source": "omega_29",
+			"target": "pallas_29_2",
 			"value": 2
 		},
 		{
-			"source": "horizon",
-			"target": "183-767-289-461-131",
-			"value": 2
+			"source": "apollo_30",
+			"target": "juno_30_1",
+			"value": 3
 		},
 		{
-			"source": "zenith",
-			"target": "107-556-164-321-147",
-			"value": 2
+			"source": "apollo_30",
+			"target": "hygeia_30_2",
+			"value": 3
 		},
 		{
-			"source": "nadir",
-			"target": "106-594-488-484-12X",
+			"source": "atlas_31",
+			"target": "europa_31_1",
 			"value": 2
 		},
 		{
-			"source": "apex",
-			"target": "066-190-726-252-149",
-			"value": 2
+			"source": "atlas_31",
+			"target": "titan_31_2",
+			"value": 3
 		},
 		{
-			"source": "vertex",
-			"target": "140-900-012-438-14X",
+			"source": "atlas_31",
+			"target": "io_31_3",
 			"value": 2
 		},
 		{
-			"source": "matrix",
-			"target": "058-438-690-312-096",
+			"source": "europa_31_1",
+			"target": "titan_31_2",
 			"value": 2
 		},
 		{
-			"source": "matrix",
-			"target": "004-889-112-130-518",
-			"value": 2
+			"source": "orion_32",
+			"target": "callisto_32_1",
+			"value": 3
 		},
 		{
-			"source": "vector",
-			"target": "193-040-307-473-220",
-			"value": 2
+			"source": "orion_32",
+			"target": "mimas_32_2",
+			"value": 1
 		},
 		{
-			"source": "scalar",
-			"target": "188-718-220-131-362",
-			"value": 2
+			"source": "orion_32",
+			"target": "enceladus_32_3",
+			"value": 3
 		},
 		{
-			"source": "scalar",
-			"target": "087-577-350-425-176",
+			"source": "callisto_32_1",
+			"target": "mimas_32_2",
 			"value": 2
 		},
 		{
-			"source": "scalar",
-			"target": "191-670-060-004-126",
-			"value": 2
+			"source": "mimas_32_2",
+			"target": "enceladus_32_3",
+			"value": 1
 		},
 		{
-			"source": "scalar",
-			"target": "188-803-921-043-695",
-			"value": 2
+			"source": "perseus_33",
+			"target": "tethys_33_1",
+			"value": 1
 		},
 		{
-			"source": "scalar",
-			"target": "041-699-843-843-567",
+			"source": "perseus_33",
+			"target": "dione_33_2",
 			"value": 2
 		},
 		{
-			"source": "scalar",
-			"target": "180-366-233-781-99X",
-			"value": 2
+			"source": "perseus_33",
+			"target": "rhea_33_3",
+			"value": 1
 		},
 		{
-			"source": "scalar",
-			"target": "156-653-831-632-101",
-			"value": 2
+			"source": "tethys_33_1",
+			"target": "dione_33_2",
+			"value": 1
 		},
 		{
-			"source": "scalar",
-			"target": "051-324-518-696-462",
-			"value": 2
+			"source": "dione_33_2",
+			"target": "rhea_33_3",
+			"value": 1
 		},
 		{
-			"source": "scalar",
-			"target": "161-487-188-181-03X",
-			"value": 2
+			"source": "hercules_34",
+			"target": "ariel_34_1",
+			"value": 1
 		},
 		{
-			"source": "scalar",
-			"target": "167-851-091-520-257",
+			"source": "hercules_34",
+			"target": "umbriel_34_2",
 			"value": 2
 		},
 		{
-			"source": "scalar",
-			"target": "122-739-962-072-793",
+			"source": "ariel_34_1",
+			"target": "umbriel_34_2",
 			"value": 2
 		},
 		{
-			"source": "tensor",
-			"target": "109-274-898-147-341",
+			"source": "umbriel_34_2",
+			"target": "titania_34_3",
 			"value": 2
 		},
 		{
-			"source": "algorithm",
-			"target": "124-179-501-005-870",
-			"value": 2
+			"source": "alpha_35",
+			"target": "oberon_35_1",
+			"value": 1
 		},
 		{
-			"source": "algorithm",
-			"target": "008-694-981-426-172",
-			"value": 2
+			"source": "alpha_35",
+			"target": "triton_35_2",
+			"value": 3
 		},
 		{
-			"source": "algorithm",
-			"target": "109-611-546-954-080",
+			"source": "beta_35",
+			"target": "triton_35_2",
 			"value": 2
 		},
 		{
-			"source": "protocol",
-			"target": "004-378-254-734-355",
-			"value": 2
+			"source": "beta_35",
+			"target": "charon_35_3",
+			"value": 1
 		},
 		{
-			"source": "protocol",
-			"target": "133-997-520-845-569",
+			"source": "beta_35",
+			"target": "phobos_35_4",
 			"value": 2
 		},
 		{
-			"source": "cipher",
-			"target": "115-381-943-359-61X",
-			"value": 2
+			"source": "alpha_35",
+			"target": "beta_35",
+			"value": 1
 		},
 		{
-			"source": "cipher",
-			"target": "022-078-711-389-998",
-			"value": 2
+			"source": "gamma_36",
+			"target": "deimos_36_1",
+			"value": 3
 		},
 		{
-			"source": "cipher",
-			"target": "132-854-391-972-865",
-			"value": 2
+			"source": "gamma_36",
+			"target": "mercury_36_2",
+			"value": 3
 		},
 		{
-			"source": "cipher",
-			"target": "171-143-110-884-468",
-			"value": 2
+			"source": "delta_36",
+			"target": "mercury_36_2",
+			"value": 3
 		},
 		{
-			"source": "code",
-			"target": "003-946-199-636-328",
-			"value": 2
+			"source": "delta_36",
+			"target": "venus_36_3",
+			"value": 3
 		},
 		{
-			"source": "code",
-			"target": "009-649-401-227-606",
-			"value": 2
+			"source": "delta_36",
+			"target": "earth_36_4",
+			"value": 1
 		},
 		{
-			"source": "code",
-			"target": "170-042-571-881-121",
-			"value": 2
+			"source": "epsilon_37",
+			"target": "mars_37_1",
+			"value": 1
 		},
 		{
-			"source": "code",
-			"target": "033-301-273-471-462",
+			"source": "zeta_37",
+			"target": "jupiter_37_2",
 			"value": 2
 		},
 		{
-			"source": "code",
-			"target": "040-826-560-477-838",
-			"value": 2
+			"source": "eta_37",
+			"target": "saturn_37_3",
+			"value": 3
 		},
 		{
-			"source": "code",
-			"target": "048-208-660-423-215",
-			"value": 2
+			"source": "epsilon_37",
+			"target": "uranus_37_4",
+			"value": 3
 		},
 		{
-			"source": "code",
-			"target": "135-293-472-746-415",
-			"value": 2
+			"source": "eta_37",
+			"target": "uranus_37_4",
+			"value": 3
 		},
 		{
-			"source": "signal",
-			"target": "153-999-081-812-523",
-			"value": 2
+			"source": "epsilon_37",
+			"target": "neptune_37_5",
+			"value": 1
 		},
 		{
-			"source": "signal",
-			"target": "000-498-778-953-787",
-			"value": 2
+			"source": "eta_37",
+			"target": "neptune_37_5",
+			"value": 3
 		},
 		{
-			"source": "signal",
-			"target": "085-065-777-135-758",
-			"value": 2
+			"source": "theta_38",
+			"target": "pluto_38_1",
+			"value": 3
 		},
 		{
-			"source": "frequency",
-			"target": "152-366-692-522-975",
-			"value": 2
+			"source": "theta_38",
+			"target": "ceres_38_2",
+			"value": 1
 		},
 		{
-			"source": "frequency",
-			"target": "167-869-142-610-582",
+			"source": "iota_38",
+			"target": "ceres_38_2",
 			"value": 2
 		},
 		{
-			"source": "amplitude",
-			"target": "191-676-336-200-724",
+			"source": "iota_38",
+			"target": "vesta_38_3",
 			"value": 2
 		},
 		{
-			"source": "wavelength",
-			"target": "056-387-403-639-935",
+			"source": "iota_38",
+			"target": "pallas_38_4",
 			"value": 2
 		},
 		{
-			"source": "spectrum",
-			"target": "066-841-401-628-941",
-			"value": 2
+			"source": "pallas_38_4",
+			"target": "pluto_38_1",
+			"value": 1
 		},
 		{
-			"source": "spectrum",
-			"target": "069-503-782-573-055",
+			"source": "kappa_39",
+			"target": "juno_39_1",
 			"value": 2
 		},
 		{
-			"source": "spectrum",
-			"target": "028-137-796-142-577",
-			"value": 2
+			"source": "kappa_39",
+			"target": "hygeia_39_2",
+			"value": 3
 		},
 		{
-			"source": "phase",
-			"target": "197-678-301-596-236",
+			"source": "juno_39_1",
+			"target": "hygeia_39_2",
 			"value": 2
 		},
 		{
-			"source": "phase",
-			"target": "147-466-934-435-143",
-			"value": 2
+			"source": "hygeia_39_2",
+			"target": "europa_39_3",
+			"value": 1
 		},
 		{
-			"source": "phase",
-			"target": "114-647-123-099-321",
-			"value": 2
+			"source": "lambda_40",
+			"target": "titan_40_1",
+			"value": 1
 		},
 		{
-			"source": "phase",
-			"target": "058-829-130-504-901",
-			"value": 2
+			"source": "lambda_40",
+			"target": "io_40_2",
+			"value": 3
 		},
 		{
-			"source": "phase",
-			"target": "169-953-034-717-264",
-			"value": 2
+			"source": "lambda_40",
+			"target": "ganymede_40_3",
+			"value": 1
 		},
 		{
-			"source": "cascade",
-			"target": "028-012-588-449-727",
-			"value": 2
+			"source": "titan_40_1",
+			"target": "io_40_2",
+			"value": 1
 		},
 		{
-			"source": "cascade",
-			"target": "038-839-140-589-623",
-			"value": 2
+			"source": "mu_41",
+			"target": "callisto_41_1",
+			"value": 1
 		},
 		{
-			"source": "flux",
-			"target": "194-924-906-201-593",
-			"value": 2
+			"source": "mu_41",
+			"target": "mimas_41_2",
+			"value": 1
 		},
 		{
-			"source": "flux",
-			"target": "195-611-964-620-410",
+			"source": "nu_42",
+			"target": "enceladus_42_1",
 			"value": 2
 		},
 		{
-			"source": "flux",
-			"target": "025-014-524-538-421",
-			"value": 2
+			"source": "nu_42",
+			"target": "tethys_42_2",
+			"value": 1
 		},
 		{
-			"source": "flux",
-			"target": "025-014-524-538-421",
-			"value": 2
+			"source": "nu_42",
+			"target": "dione_42_3",
+			"value": 1
 		},
 		{
-			"source": "gradient",
-			"target": "120-667-268-642-909",
-			"value": 2
+			"source": "xi_42",
+			"target": "dione_42_3",
+			"value": 1
 		},
 		{
-			"source": "gradient",
-			"target": "163-117-320-460-138",
+			"source": "xi_42",
+			"target": "rhea_42_4",
 			"value": 2
 		},
 		{
-			"source": "gradient",
-			"target": "191-290-593-697-506",
+			"source": "xi_42",
+			"target": "iapetus_42_5",
 			"value": 2
 		},
 		{
-			"source": "gradient",
-			"target": "118-339-847-530-982",
-			"value": 2
+			"source": "omicron_43",
+			"target": "ariel_43_1",
+			"value": 1
 		},
 		{
-			"source": "gradient",
-			"target": "073-318-370-112-877",
-			"value": 2
+			"source": "omicron_43",
+			"target": "umbriel_43_2",
+			"value": 3
 		},
 		{
-			"source": "gradient",
-			"target": "113-828-920-381-078",
-			"value": 2
+			"source": "pi_43",
+			"target": "umbriel_43_2",
+			"value": 1
 		},
 		{
-			"source": "gradient",
-			"target": "048-983-957-537-421",
-			"value": 2
+			"source": "pi_43",
+			"target": "titania_43_3",
+			"value": 1
 		},
 		{
-			"source": "velocity",
-			"target": "073-531-962-083-670",
+			"source": "omicron_43",
+			"target": "pi_43",
 			"value": 2
 		}
 	]

@@ -1,4 +1,5 @@
 {
+	"type": "module",
 	"scripts": {
 		"start": "five-server . --open index.html",
 		"dev": "npm start",
