@@ -8,7 +8,7 @@
 					"d3": "./src/d3-to-esm.js",
 					"xd3": "https://cdn.jsdelivr.net/npm/d3@7.9.0/src/index.js",
 					"lume": "https://cdn.jsdelivr.net/npm/lume@0.3.0-alpha.46/dist/index.js",
-					"nimble-html": "https://cdn.jsdelivr.net/npm/nimble-html@0.1.0/html.js"
+					"nimble-html": "https://cdn.jsdelivr.net/npm/nimble-html@0.1.4/html.js"
 				},
 				"scopes": {
 					"https://cdn.jsdelivr.net/": {
