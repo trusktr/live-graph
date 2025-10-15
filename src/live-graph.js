@@ -13,6 +13,9 @@ const svgMode = false
 const nodeDiamsSecondary = [20, 30, 40]
 const nodeDiamPrimary = 80
 
+const perspective = 300
+const maxNodeDepth = 100
+
 export class LiveGraph extends DopeElement {
 	resizeHandler = () => this.update()
 
@@ -28,14 +31,13 @@ export class LiveGraph extends DopeElement {
 
 		// Copy data to avoid mutation of original, and add x,y,z properties for D3 force simulation
 		const links = this.data.links.map(d => ({...d}))
-		const maxDepth = 50
 		const nodes = this.data.nodes.map(d => {
 			// Static nodes keep their fixed positions, others get random positions
 			if (d.group === 'static') {
 				return {...d, z: 0} // Static nodes at z=0
 			} else {
 				// Pre-calculate Z depth: secondary nodes get random depth, primary nodes stay at z=0
-				const z = d.group === 'secondary' ? (Math.random() * -maxDepth) | 0 : 0
+				const z = d.group === 'secondary' ? (Math.random() * -maxNodeDepth) | 0 : 0
 				return {...d, x: Math.random() * 400 - 200, y: Math.random() * 400 - 200, z} // Spread other nodes wider
 			}
 		})
@@ -159,7 +161,6 @@ export class LiveGraph extends DopeElement {
 		const height = window.innerHeight
 		const viewX = -width / 2
 		const viewY = -height / 2
-		const perspective = 800
 
 		return html`
 			<div style="width: 100%; height: 100%;">
@@ -221,8 +222,8 @@ export class LiveGraph extends DopeElement {
 					webgl
 					fog-mode="linear"
 					fog-color="white"
-					fog-near=${perspective}
-					fog-far=${perspective + 60}
+					fog-near=${perspective - maxNodeDepth * 1.3}
+					fog-far=${perspective + maxNodeDepth * 1.1}
 				>
 					<lume-ambient-light intensity="0.5"></lume-ambient-light>
 
@@ -235,6 +236,13 @@ export class LiveGraph extends DopeElement {
 						<!-- Any lume content in here with position="0 0 0" (the default) is in the center of the screen. -->
 
 						<lume-point-light position="0 0 200" intensity="20000" color="white"></lume-point-light>
+
+						<lume-camera-rig
+							min-vertical-angle="0"
+							max-vertical-angle="0"
+							min-horizontal-angle="0"
+							max-horizontal-angle="0"
+						></lume-camera-rig>
 
 						<!-- For each link in the graph, create a lume-line to
 						connect the two nodes. Every three numbers in the points
