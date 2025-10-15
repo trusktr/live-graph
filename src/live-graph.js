@@ -26,14 +26,17 @@ export class LiveGraph extends DopeElement {
 			return
 		}
 
-		// Copy data to avoid mutation of original, and add x,y properties for D3 force simulation
+		// Copy data to avoid mutation of original, and add x,y,z properties for D3 force simulation
 		const links = this.data.links.map(d => ({...d}))
+		const maxDepth = 50
 		const nodes = this.data.nodes.map(d => {
 			// Static nodes keep their fixed positions, others get random positions
 			if (d.group === 'static') {
-				return {...d} // Static nodes already have x, y, fx, fy defined
+				return {...d, z: 0} // Static nodes at z=0
 			} else {
-				return {...d, x: Math.random() * 400 - 200, y: Math.random() * 400 - 200} // Spread other nodes wider
+				// Pre-calculate Z depth: secondary nodes get random depth, primary nodes stay at z=0
+				const z = d.group === 'secondary' ? (Math.random() * -maxDepth) | 0 : 0
+				return {...d, x: Math.random() * 400 - 200, y: Math.random() * 400 - 200, z} // Spread other nodes wider
 			}
 		})
 
@@ -105,9 +108,13 @@ export class LiveGraph extends DopeElement {
 
 			node.attr('cx', d => d.x).attr('cy', d => d.y)
 
-			lumeLink.attr('points', d => `${d.source.x} ${d.source.y} 0 ${d.target.x} ${d.target.y} 0`)
+			// Use pre-calculated Z depth for both nodes and their connecting links
+			lumeLink.attr(
+				'points',
+				d => `${d.source.x} ${d.source.y} ${d.source.z} ${d.target.x} ${d.target.y} ${d.target.z}`,
+			)
 
-			lumeNode.attr('position', d => `${d.x} ${d.y} 1`)
+			lumeNode.attr('position', d => `${d.x} ${d.y} ${d.z}`)
 		})
 
 		// Drag functions
@@ -152,6 +159,7 @@ export class LiveGraph extends DopeElement {
 		const height = window.innerHeight
 		const viewX = -width / 2
 		const viewY = -height / 2
+		const perspective = 800
 
 		return html`
 			<div style="width: 100%; height: 100%;">
@@ -208,7 +216,14 @@ export class LiveGraph extends DopeElement {
 			</div>
 
 			<div id="lume-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-				<lume-scene webgl fog>
+				<lume-scene
+					perspective=${perspective}
+					webgl
+					fog-mode="linear"
+					fog-color="white"
+					fog-near=${perspective}
+					fog-far=${perspective + 60}
+				>
 					<lume-ambient-light intensity="0.5"></lume-ambient-light>
 
 					<lume-element3d
