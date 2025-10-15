@@ -8,6 +8,11 @@ import {DopeElement} from './DopeElement.js'
 const response = await fetch('./src/data.json')
 const graphData = await response.json()
 
+const svgMode = true
+
+const nodeDiam1 = 20
+const nodeDiam2 = 40
+
 export class LiveGraph extends DopeElement {
 	resizeHandler = () => this.update()
 
@@ -33,37 +38,34 @@ export class LiveGraph extends DopeElement {
 				d3.forceLink(links).id(d => /** @type {any} */ (d).id),
 			)
 			.force('charge', d3.forceManyBody())
-			.force('x', d3.forceX())
-			.force('y', d3.forceY())
+			.force('x', d3.forceX(10))
+			.force('y', d3.forceY(10))
 
 		// Select the declaratively created link and node groups
 		const linksElement = this.shadowRoot?.querySelector('.links')
 		const nodesElement = this.shadowRoot?.querySelector('.nodes')
+		const lumeContainerEl = this.shadowRoot?.querySelector('#lume-container')
 
-		if (!linksElement || !nodesElement) {
-			console.error('Link or node groups not found')
-			return
-		}
-
-		console.log('Found elements:', {
-			links: linksElement.children.length,
-			nodes: nodesElement.children.length,
-		})
+		if (!linksElement || !nodesElement) throw new Error('Link or node groups not found')
+		if (!lumeContainerEl) throw new Error('Lume container not found')
 
 		const linkGroup = d3.select(linksElement)
 		const nodeGroup = d3.select(nodesElement)
+		const lumeContainer = d3.select(lumeContainerEl)
 
-		// Bind to existing declaratively created elements
+		// Bind to existing declaratively created SVG elements
 		const link = linkGroup.selectAll('line').data(links)
 		const node = nodeGroup
 			.selectAll('circle')
 			.data(nodes)
 			.call(/** @type {any} */ (d3.drag()).on('start', dragstarted).on('drag', dragged).on('end', dragended))
 
-		console.log('Created elements:', {
-			linkCount: link.size(),
-			nodeCount: node.size(),
-		})
+		// Bind to existing declaratively created Lume elements
+		const lumeLink = lumeContainer.selectAll('lume-line').data(links)
+		const lumeNode = lumeContainer
+			.selectAll('lume-rounded-rectangle')
+			.data(nodes)
+			.call(/** @type {any} */ (d3.drag()).on('start', dragstarted).on('drag', dragged).on('end', dragended))
 
 		// Set the position attributes on each tick of the simulation
 		simulation.on('tick', () => {
@@ -74,6 +76,10 @@ export class LiveGraph extends DopeElement {
 				.attr('y2', d => /** @type {any} */ (d.target).y)
 
 			node.attr('cx', d => d.x).attr('cy', d => d.y)
+
+			lumeLink.attr('points', d => `${d.source.x} ${d.source.y} 0 ${d.target.x} ${d.target.y} 0`)
+
+			lumeNode.attr('position', d => `${d.x} ${d.y} 1`)
 		})
 
 		// Drag functions
@@ -93,6 +99,11 @@ export class LiveGraph extends DopeElement {
 			event.subject.fx = null
 			event.subject.fy = null
 		}
+
+		const light = this.shadowRoot?.querySelector('lume-point-light')
+		if (!light) throw new Error('Lume point light not found')
+
+		light.position = (x, y, z, t, dt) => [400 * Math.sin(t * 0.001), 400 * Math.cos(t * 0.001), z]
 	}
 
 	connectedCallback() {
@@ -120,13 +131,14 @@ export class LiveGraph extends DopeElement {
 					<g class="links">
 						${this.data
 							? this.data.links.map(
-									link =>
-										svg`<line
+									link => svg`
+										<line
 											data-value="${link.value}"
 											stroke="#999"
 											stroke-opacity="0.6"
 											stroke-width="${Math.sqrt(link.value)}"
-										></line>`,
+										></line>
+									`,
 								)
 							: ''}
 					</g>
@@ -136,7 +148,7 @@ export class LiveGraph extends DopeElement {
 							? this.data.nodes.map(
 									node => svg`
 										<circle
-											r="5"
+											r=${String(node.group) === 'Citing Patents' ? nodeDiam1 / 2 : nodeDiam2 / 2}
 											data-id="${node.id}"
 											data-group="${node.group}"
 											fill="${String(node.group) === 'Citing Patents' ? '#1f77b4' : '#ff7f0e'}"
@@ -152,22 +164,78 @@ export class LiveGraph extends DopeElement {
 				</svg>
 			</div>
 
+			<div id="lume-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+				<lume-scene webgl>
+					<lume-point-light position="0 200 200" intensity="40000"></lume-point-light>
+					<lume-ambient-light intensity="0.5"></lume-ambient-light>
+
+					<lume-element3d
+						.visible=${svgMode ? false : true}
+						align-point="0.5 0.5"
+						size-mode="proportional proportional"
+						size="1 1"
+					>
+						<!-- Any lume content in here with position="0 0 0" (the default) is in the center of the screen. -->
+
+						<!-- For each link in the graph, create a lume-line to
+						connect the two nodes. Every three numbers in the points
+						attribute represent a point in 3D space. With the force
+						graph we only set X and Y values.
+						-->
+						${this.data
+							? this.data.links.map(
+									link => html`
+										<lume-line data-value="${link.value}" color="black" points="0 0 0 50 50 0"></lume-line>
+									`,
+								)
+							: ''}
+
+						<!-- for each node in the graph, create a lume-rounded-rectangle -->
+						${this.data
+							? this.data.nodes.map(
+									node => html`
+										<lume-rounded-rectangle
+											mount-point="0.5 0.5"
+											.size="${String(node.group) === 'Citing Patents'
+												? [nodeDiam1, nodeDiam1]
+												: [nodeDiam2, nodeDiam2]}"
+											corner-radius="${String(node.group) === 'Citing Patents' ? nodeDiam1 / 2 : nodeDiam2 / 2}"
+											thickness="0.1"
+											quadratic-corners="false"
+											data-id="${node.id}"
+											data-group="${node.group}"
+											.color="${String(node.group) === 'Citing Patents' ? '#1f77b4' : '#ff7f0e'}"
+											receive-shadow="false"
+										></lume-rounded-rectangle>
+									`,
+								)
+							: ''}
+					</lume-element3d>
+				</lume-scene>
+			</div>
+
 			<style>
 				:host {
 					display: block;
 					width: 100%;
 					height: 100vh;
+					background: lightblue;
 				}
 
 				svg {
 					display: block;
+					display: ${svgMode ? 'block' : 'none'};
 					width: 100%;
 					height: 100%;
-					background: lightblue;
 				}
 
 				.nodes circle {
 					cursor: pointer;
+				}
+
+				#lume-container,
+				#lume-container * {
+					pointer-events: ${svgMode ? 'none' : 'auto'};
 				}
 			</style>
 		`

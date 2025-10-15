@@ -9,6 +9,8 @@ export class DopeElement extends HTMLElement {
 		super()
 
 		this.attachShadow({mode: 'open'})
+
+		// Microtask so that subclass fields are initialized before calling template.
 		queueMicrotask(() => this.shadowRoot?.append(...this.template()(this)))
 	}
 
