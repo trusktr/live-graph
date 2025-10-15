@@ -2,1547 +2,1547 @@
 	"nodes": [
 		{
 			"id": "alpha",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "beta",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "gamma",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "delta",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "epsilon",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 3,
 			"citing_patents_count": 3
 		},
 		{
 			"id": "zeta",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "eta",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "theta",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "iota",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "kappa",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "lambda",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "mu",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "nu",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "xi",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 7,
 			"citing_patents_count": 7
 		},
 		{
 			"id": "omicron",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "pi",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "rho",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "sigma",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 3,
 			"citing_patents_count": 3
 		},
 		{
 			"id": "tau",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 6,
 			"citing_patents_count": 6
 		},
 		{
 			"id": "upsilon",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "phi",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "chi",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "psi",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 4,
 			"citing_patents_count": 4
 		},
 		{
 			"id": "omega",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "apollo",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "artemis",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "athena",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "demeter",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "dionysus",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 6,
 			"citing_patents_count": 6
 		},
 		{
 			"id": "hades",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "hera",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "hermes",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "hestia",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "poseidon",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "zeus",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "ares",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 3,
 			"citing_patents_count": 3
 		},
 		{
 			"id": "aphrodite",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "hephaestus",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "mercury",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 3,
 			"citing_patents_count": 3
 		},
 		{
 			"id": "venus",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "mars",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "jupiter",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "saturn",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 11,
 			"citing_patents_count": 11
 		},
 		{
 			"id": "uranus",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "neptune",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 3,
 			"citing_patents_count": 3
 		},
 		{
 			"id": "pluto",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "comet",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "nebula",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "galaxy",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "quasar",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "pulsar",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "starlight",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 3,
 			"citing_patents_count": 3
 		},
 		{
 			"id": "moonbeam",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "sunray",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 5,
 			"citing_patents_count": 5
 		},
 		{
 			"id": "aurora",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 3,
 			"citing_patents_count": 3
 		},
 		{
 			"id": "cosmic",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "quantum",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "photon",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "neutron",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "proton",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "electron",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "atom",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 12,
 			"citing_patents_count": 12
 		},
 		{
 			"id": "molecule",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 3,
 			"citing_patents_count": 3
 		},
 		{
 			"id": "crystal",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "plasma",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 6,
 			"citing_patents_count": 6
 		},
 		{
 			"id": "fusion",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "fission",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 6,
 			"citing_patents_count": 6
 		},
 		{
 			"id": "energy",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 4,
 			"citing_patents_count": 4
 		},
 		{
 			"id": "matter",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "void",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "stellar",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 29,
 			"citing_patents_count": 29
 		},
 		{
 			"id": "lunar",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 11,
 			"citing_patents_count": 11
 		},
 		{
 			"id": "solar",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "orbital",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 4,
 			"citing_patents_count": 4
 		},
 		{
 			"id": "meteor",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "asteroid",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "eclipse",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "horizon",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 4,
 			"citing_patents_count": 4
 		},
 		{
 			"id": "zenith",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "nadir",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "apex",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "vertex",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "matrix",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "vector",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "scalar",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 11,
 			"citing_patents_count": 11
 		},
 		{
 			"id": "tensor",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "algorithm",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 3,
 			"citing_patents_count": 3
 		},
 		{
 			"id": "protocol",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "cipher",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 4,
 			"citing_patents_count": 4
 		},
 		{
 			"id": "code",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 7,
 			"citing_patents_count": 7
 		},
 		{
 			"id": "signal",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 3,
 			"citing_patents_count": 3
 		},
 		{
 			"id": "frequency",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "amplitude",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "wavelength",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "spectrum",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 3,
 			"citing_patents_count": 3
 		},
 		{
 			"id": "phase",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 5,
 			"citing_patents_count": 5
 		},
 		{
 			"id": "cascade",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 2,
 			"citing_patents_count": 2
 		},
 		{
 			"id": "flux",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 4,
 			"citing_patents_count": 4
 		},
 		{
 			"id": "gradient",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 7,
 			"citing_patents_count": 7
 		},
 		{
 			"id": "velocity",
-			"group": "Cited Works",
+			"group": "primary",
 			"radius": 1,
 			"citing_patents_count": 1
 		},
 		{
 			"id": "109-294-662-661-65X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "074-937-457-594-345",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "081-355-367-506-27X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "048-634-530-447-798",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "137-231-469-269-151",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "031-072-815-607-16X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "105-312-070-982-098",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "018-515-082-074-296",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "027-228-373-793-594",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "016-712-604-622-721",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "086-316-087-480-933",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "118-309-833-112-117",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "134-672-819-080-83X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "036-789-224-520-054",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "106-594-488-484-12X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "125-726-727-125-409",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "161-487-188-181-03X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "076-538-237-089-675",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "051-324-518-696-462",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "198-017-973-913-570",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "156-653-831-632-101",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "178-739-712-688-618",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "131-486-498-702-07X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "010-031-167-075-106",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "119-453-428-180-987",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "153-595-914-216-97X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "148-353-591-913-750",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "019-827-938-996-490",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "184-646-935-269-773",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "186-230-275-872-748",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "165-291-395-706-725",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "047-113-007-956-15X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "089-019-916-582-397",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "136-000-598-663-919",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "051-072-189-723-758",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "040-766-915-457-886",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "141-482-415-400-338",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "149-129-599-518-595",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "156-286-485-464-499",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "001-353-214-346-040",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "118-479-143-842-720",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "007-641-959-106-118",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "189-040-066-278-226",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "026-244-336-682-442",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "168-286-254-597-740",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "109-916-358-959-05X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "002-458-268-309-533",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "038-310-729-099-192",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "179-033-965-606-598",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "113-229-447-433-64X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "077-771-399-719-227",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "183-966-651-664-305",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "013-467-292-050-692",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "079-314-054-163-947",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "110-082-309-221-187",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "128-382-566-327-896",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "143-543-676-408-839",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "005-743-260-244-802",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "026-638-223-054-804",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "048-208-660-423-215",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "159-658-602-048-982",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "077-811-145-153-079",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "170-781-236-728-970",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "144-284-594-583-951",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "139-409-891-293-77X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "081-017-751-048-013",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "114-963-910-586-828",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "162-513-842-046-362",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "188-803-921-043-695",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "191-147-881-232-285",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "081-817-015-173-962",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "106-530-060-683-82X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "133-935-409-400-672",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "046-588-899-387-353",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "049-222-171-973-678",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "074-598-665-914-143",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "190-195-697-065-907",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "031-461-589-086-771",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "167-851-091-520-257",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "151-760-923-304-502",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "097-019-537-894-104",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "170-696-774-214-700",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "084-807-525-209-072",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "044-648-704-787-12X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "150-822-190-827-131",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "051-919-508-851-10X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "036-251-116-198-69X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "149-946-446-737-586",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "075-397-286-033-085",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "028-992-308-265-357",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "044-207-676-689-405",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "030-350-713-791-200",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "093-997-239-092-949",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "046-345-437-716-689",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "146-411-731-640-871",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "000-266-572-036-366",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "186-389-876-954-313",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "168-483-508-794-377",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "029-748-240-628-036",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "184-507-509-452-559",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "069-961-069-943-549",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "017-777-392-752-199",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "000-150-893-948-804",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "027-437-502-794-894",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "074-789-039-135-70X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "063-617-165-524-327",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "019-872-586-012-269",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "103-648-347-913-447",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "007-245-406-573-328",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "008-337-248-044-723",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "197-071-041-313-103",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "098-538-513-984-747",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "019-125-805-246-964",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "172-064-016-145-117",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "007-417-942-335-284",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "005-947-025-410-764",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "116-404-026-640-450",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "090-437-295-781-023",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "197-158-559-918-854",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "076-225-263-850-117",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "049-199-509-181-561",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "179-045-041-176-506",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "004-301-778-674-378",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "111-313-231-732-367",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "092-197-031-561-353",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "192-019-786-423-841",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "076-608-180-638-59X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "175-263-797-963-040",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "141-694-167-791-759",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "081-203-444-563-604",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "125-348-249-762-351",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "125-850-986-196-787",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "119-397-162-706-860",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "133-023-408-974-285",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "039-847-299-166-952",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "076-641-402-312-988",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "102-485-198-725-150",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "168-829-456-947-639",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "098-813-369-162-741",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "023-180-369-416-862",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "189-473-046-734-005",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "019-633-684-883-828",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "174-501-376-407-235",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "129-062-448-949-030",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "162-916-741-322-002",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "080-026-305-809-343",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "016-698-167-713-829",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "091-325-080-234-401",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "032-206-614-235-635",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "143-271-017-351-983",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "169-312-245-869-778",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "089-818-979-077-305",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "187-517-157-601-239",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "111-583-988-147-450",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "058-026-435-099-506",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "153-651-762-444-327",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "159-766-711-047-610",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "058-933-099-316-100",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "023-452-662-674-373",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "047-432-030-246-04X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "139-008-712-602-518",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "137-720-748-139-162",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "192-136-893-476-749",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "172-890-893-515-719",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "104-472-615-006-481",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "097-374-332-908-898",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "034-416-075-094-770",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "127-642-274-375-054",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "036-708-909-192-156",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "193-863-590-855-263",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "150-028-859-997-047",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "132-394-716-226-832",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "131-238-819-455-784",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "155-402-461-387-483",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "040-389-070-176-191",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "076-478-479-475-120",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "034-190-802-321-708",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "130-316-719-983-242",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "036-668-261-470-040",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "183-767-289-461-131",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "107-556-164-321-147",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "066-190-726-252-149",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "140-900-012-438-14X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "058-438-690-312-096",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "004-889-112-130-518",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "193-040-307-473-220",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "188-718-220-131-362",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "087-577-350-425-176",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "191-670-060-004-126",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "041-699-843-843-567",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "180-366-233-781-99X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "122-739-962-072-793",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "109-274-898-147-341",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "124-179-501-005-870",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "008-694-981-426-172",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "109-611-546-954-080",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "004-378-254-734-355",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "133-997-520-845-569",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "115-381-943-359-61X",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "022-078-711-389-998",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "132-854-391-972-865",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "171-143-110-884-468",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "003-946-199-636-328",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "009-649-401-227-606",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "170-042-571-881-121",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "033-301-273-471-462",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "040-826-560-477-838",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "135-293-472-746-415",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "153-999-081-812-523",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "000-498-778-953-787",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "085-065-777-135-758",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "152-366-692-522-975",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "167-869-142-610-582",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "191-676-336-200-724",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "056-387-403-639-935",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "066-841-401-628-941",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "069-503-782-573-055",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "028-137-796-142-577",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "197-678-301-596-236",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "147-466-934-435-143",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "114-647-123-099-321",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "058-829-130-504-901",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "169-953-034-717-264",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "028-012-588-449-727",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "038-839-140-589-623",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "194-924-906-201-593",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "195-611-964-620-410",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "025-014-524-538-421",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "120-667-268-642-909",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "163-117-320-460-138",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "191-290-593-697-506",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "118-339-847-530-982",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "073-318-370-112-877",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "113-828-920-381-078",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "048-983-957-537-421",
-			"group": "Citing Patents"
+			"group": "secondary"
 		},
 		{
 			"id": "073-531-962-083-670",
-			"group": "Citing Patents"
+			"group": "secondary"
 		}
 	],
 	"links": [

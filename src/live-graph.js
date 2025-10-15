@@ -40,9 +40,9 @@ export class LiveGraph extends DopeElement {
 					.id(d => /** @type {any} */ (d).id)
 					.distance(80), // Increase link distance from default ~30 to 80
 			)
-			.force('charge', d3.forceManyBody().strength(-400)) // Increase repulsion from default -30 to -400
-			.force('x', d3.forceX(10))
-			.force('y', d3.forceY(10))
+			.force('charge', d3.forceManyBody().strength(-350)) // Reduce repulsion to bring islands closer
+			.force('x', d3.forceX(0).strength(0.1)) // Stronger centering force to pull islands together
+			.force('y', d3.forceY(0).strength(0.1))
 
 		// Select the declaratively created link and node groups
 		const linksElement = this.shadowRoot?.querySelector('.links')
@@ -151,10 +151,10 @@ export class LiveGraph extends DopeElement {
 							? this.data.nodes.map(
 									node => svg`
 										<circle
-											r=${String(node.group) === 'Citing Patents' ? nodeDiamsSecondary[(Math.random() * nodeDiamsSecondary.length) | 0] / 2 : nodeDiamPrimary / 2}
+											r=${String(node.group) === 'secondary' ? nodeDiamsSecondary[(Math.random() * nodeDiamsSecondary.length) | 0] / 2 : nodeDiamPrimary / 2}
 											data-id="${node.id}"
 											data-group="${node.group}"
-											fill="${String(node.group) === 'Citing Patents' ? '#1f77b4' : '#ff7f0e'}"
+											fill="${String(node.group) === 'secondary' ? '#1f77b4' : '#ff7f0e'}"
 											stroke="#fff"
 											stroke-width="1.5"
 										>
@@ -202,17 +202,17 @@ export class LiveGraph extends DopeElement {
 									return html`
 										<lume-rounded-rectangle
 											mount-point="0.5 0.5"
-											.size="${String(node.group) === 'Citing Patents'
+											.size="${String(node.group) === 'secondary'
 												? [nodeDiamsSecondary[randomSizePick], nodeDiamsSecondary[randomSizePick]]
 												: [nodeDiamPrimary, nodeDiamPrimary]}"
-											corner-radius="${String(node.group) === 'Citing Patents'
+											corner-radius="${String(node.group) === 'secondary'
 												? nodeDiamsSecondary[randomSizePick] / 2
 												: nodeDiamPrimary / 2}"
 											thickness="0.1"
 											quadratic-corners="false"
 											data-id="${node.id}"
 											data-group="${node.group}"
-											.color="${String(node.group) === 'Citing Patents' ? '#1f77b4' : '#ff7f0e'}"
+											.color="${String(node.group) === 'secondary' ? '#1f77b4' : '#ff7f0e'}"
 											receive-shadow="false"
 										></lume-rounded-rectangle>
 									`
