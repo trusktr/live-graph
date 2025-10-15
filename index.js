@@ -1,4 +1,4 @@
-import {html} from 'nimble-html'
+import {html, svg} from 'nimble-html'
 // TODO we don't need the whole Lume and D3 libs. Upgrade to a tree-shaken bundle later as optimization.
 import 'lume'
 import * as d3 from 'd3'
@@ -8,9 +8,10 @@ const response = await fetch('./src/data.json')
 const graphData = await response.json()
 
 class LiveGraph extends DopeElement {
-	connectedCallback() {
-		// Wait for the template to be rendered before initializing the graph.
-		queueMicrotask(() => this.initializeGraph())
+	resizeHandler = () => {
+		if (this.data) {
+			this.update()
+		}
 	}
 
 	// Load data from JSON file
@@ -28,9 +29,6 @@ class LiveGraph extends DopeElement {
 			console.error('SVG element not found')
 			return
 		}
-
-		// Load the actual dataset
-		this.template()
 
 		// Copy data to avoid mutation of original, and add x,y properties for D3 force simulation
 		const links = this.data.links.map(d => ({...d}))
@@ -106,43 +104,63 @@ class LiveGraph extends DopeElement {
 		}
 	}
 
-	template() {
-		const html = String.raw
+	connectedCallback() {
+		// Wait for the template to be rendered before initializing the graph.
+		queueMicrotask(() => this.initializeGraph())
 
-		const string = html`
-			<svg width="928" height="680" viewBox="-139.2 -102 278.4 204">
-				<g class="links">
-					${this.data
-						? this.data.links.map(
-								link =>
-									html`<line
-										data-value="${link.value}"
-										stroke="#999"
-										stroke-opacity="0.6"
-										stroke-width="${Math.sqrt(link.value)}"
-									></line>`,
-							)
-						: ''}
-				</g>
-				<g class="nodes">
-					${this.data
-						? this.data.nodes.map(
-								node => html`
-									<circle
-										r="5"
-										data-id="${node.id}"
-										data-group="${node.group}"
-										fill="${String(node.group) === 'Citing Patents' ? '#1f77b4' : '#ff7f0e'}"
-										stroke="#fff"
-										stroke-width="1.5"
-									>
-										<title>${node.id}</title>
-									</circle>
-								`,
-							)
-						: ''}
-				</g>
-			</svg>
+		// Update template on window resize to maintain consistent scale
+		window.addEventListener('resize', this.resizeHandler)
+	}
+
+	disconnectedCallback() {
+		window.removeEventListener('resize', this.resizeHandler)
+	}
+
+	template() {
+		// Calculate viewBox to match window dimensions at consistent scale
+		const width = window.innerWidth
+		const height = window.innerHeight
+		const viewX = -width / 2
+		const viewY = -height / 2
+
+		return html`
+			<div style="width: 100%; height: 100%;">
+				<svg width="${width}" height="${height}" viewBox="${viewX} ${viewY} ${width} ${height}">
+					<g class="links">
+						${this.data
+							? this.data.links.map(
+									link =>
+										svg`<line
+											data-value="${link.value}"
+											stroke="#999"
+											stroke-opacity="0.6"
+											stroke-width="${Math.sqrt(link.value)}"
+										></line>`,
+								)
+							: ''}
+					</g>
+
+					<g class="nodes">
+						${this.data
+							? this.data.nodes.map(
+									node => svg`
+										<circle
+											r="5"
+											data-id="${node.id}"
+											data-group="${node.group}"
+											fill="${String(node.group) === 'Citing Patents' ? '#1f77b4' : '#ff7f0e'}"
+											stroke="#fff"
+											stroke-width="1.5"
+										>
+											<title>${node.id}</title>
+										</circle>
+									`,
+								)
+							: ''}
+					</g>
+				</svg>
+			</div>
+
 			<style>
 				:host {
 					display: block;
@@ -162,11 +180,6 @@ class LiveGraph extends DopeElement {
 				}
 			</style>
 		`
-
-		return () => {
-			this.shadowRoot && (this.shadowRoot.innerHTML = string)
-			return [new Text()]
-		}
 	}
 }
 
