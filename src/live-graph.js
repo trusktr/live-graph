@@ -8,10 +8,10 @@ import {DopeElement} from './DopeElement.js'
 const response = await fetch('./src/data.json')
 const graphData = await response.json()
 
-const svgMode = true
+const svgMode = false
 
-const nodeDiam1 = 20
-const nodeDiam2 = 40
+const nodeDiamsSecondary = [20, 30, 40]
+const nodeDiamPrimary = 80
 
 export class LiveGraph extends DopeElement {
 	resizeHandler = () => this.update()
@@ -28,16 +28,19 @@ export class LiveGraph extends DopeElement {
 
 		// Copy data to avoid mutation of original, and add x,y properties for D3 force simulation
 		const links = this.data.links.map(d => ({...d}))
-		const nodes = this.data.nodes.map(d => ({...d, x: Math.random() * 100 - 50, y: Math.random() * 100 - 50}))
+		const nodes = this.data.nodes.map(d => ({...d, x: Math.random() * 200 - 100, y: Math.random() * 200 - 100}))
 
-		// Create the force simulation
+		// Create the force simulation with D3.
 		const simulation = d3
 			.forceSimulation(nodes)
 			.force(
 				'link',
-				d3.forceLink(links).id(d => /** @type {any} */ (d).id),
+				d3
+					.forceLink(links)
+					.id(d => /** @type {any} */ (d).id)
+					.distance(80), // Increase link distance from default ~30 to 80
 			)
-			.force('charge', d3.forceManyBody())
+			.force('charge', d3.forceManyBody().strength(-400)) // Increase repulsion from default -30 to -400
 			.force('x', d3.forceX(10))
 			.force('y', d3.forceY(10))
 
@@ -148,7 +151,7 @@ export class LiveGraph extends DopeElement {
 							? this.data.nodes.map(
 									node => svg`
 										<circle
-											r=${String(node.group) === 'Citing Patents' ? nodeDiam1 / 2 : nodeDiam2 / 2}
+											r=${String(node.group) === 'Citing Patents' ? nodeDiamsSecondary[(Math.random() * nodeDiamsSecondary.length) | 0] / 2 : nodeDiamPrimary / 2}
 											data-id="${node.id}"
 											data-group="${node.group}"
 											fill="${String(node.group) === 'Citing Patents' ? '#1f77b4' : '#ff7f0e'}"
@@ -166,7 +169,6 @@ export class LiveGraph extends DopeElement {
 
 			<div id="lume-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 				<lume-scene webgl>
-					<lume-point-light position="0 200 200" intensity="40000"></lume-point-light>
 					<lume-ambient-light intensity="0.5"></lume-ambient-light>
 
 					<lume-element3d
@@ -176,6 +178,8 @@ export class LiveGraph extends DopeElement {
 						size="1 1"
 					>
 						<!-- Any lume content in here with position="0 0 0" (the default) is in the center of the screen. -->
+
+						<lume-point-light position="0 0 200" intensity="20000" color="white"></lume-point-light>
 
 						<!-- For each link in the graph, create a lume-line to
 						connect the two nodes. Every three numbers in the points
@@ -192,14 +196,18 @@ export class LiveGraph extends DopeElement {
 
 						<!-- for each node in the graph, create a lume-rounded-rectangle -->
 						${this.data
-							? this.data.nodes.map(
-									node => html`
+							? this.data.nodes.map(node => {
+									const randomSizePick = (Math.random() * nodeDiamsSecondary.length) | 0
+
+									return html`
 										<lume-rounded-rectangle
 											mount-point="0.5 0.5"
 											.size="${String(node.group) === 'Citing Patents'
-												? [nodeDiam1, nodeDiam1]
-												: [nodeDiam2, nodeDiam2]}"
-											corner-radius="${String(node.group) === 'Citing Patents' ? nodeDiam1 / 2 : nodeDiam2 / 2}"
+												? [nodeDiamsSecondary[randomSizePick], nodeDiamsSecondary[randomSizePick]]
+												: [nodeDiamPrimary, nodeDiamPrimary]}"
+											corner-radius="${String(node.group) === 'Citing Patents'
+												? nodeDiamsSecondary[randomSizePick] / 2
+												: nodeDiamPrimary / 2}"
 											thickness="0.1"
 											quadratic-corners="false"
 											data-id="${node.id}"
@@ -207,8 +215,8 @@ export class LiveGraph extends DopeElement {
 											.color="${String(node.group) === 'Citing Patents' ? '#1f77b4' : '#ff7f0e'}"
 											receive-shadow="false"
 										></lume-rounded-rectangle>
-									`,
-								)
+									`
+								})
 							: ''}
 					</lume-element3d>
 				</lume-scene>
