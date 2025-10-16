@@ -38,7 +38,19 @@ export class LiveGraph extends DopeElement {
 			} else {
 				// Pre-calculate Z depth: secondary nodes get random depth, primary nodes stay at z=0
 				const z = d.group === 'secondary' ? (Math.random() * -maxNodeDepth) | 0 : 0
-				return {...d, x: Math.random() * 400 - 200, y: Math.random() * 400 - 200, z} // Spread other nodes wider
+				// Add wiggle parameters for organic movement
+				const wigglePhaseX = Math.random() * Math.PI * 2
+				const wigglePhaseY = Math.random() * Math.PI * 2
+				const wiggleSpeed = 0.5 + Math.random() * 0.5 // Random speed between 0.5-1.0
+				return {
+					...d,
+					x: Math.random() * 400 - 200,
+					y: Math.random() * 400 - 200,
+					z,
+					wigglePhaseX,
+					wigglePhaseY,
+					wiggleSpeed,
+				}
 			}
 		})
 
@@ -73,6 +85,38 @@ export class LiveGraph extends DopeElement {
 			) // Static nodes have reduced repulsion for smaller exclusion zone
 			.force('x', d3.forceX(0).strength(0.1)) // Horizontal centering
 			.force('y', d3.forceY(0).strength(0.05))
+			.force('wiggle', () => {
+				// Balloon-in-air effect: gentle, prolonged air currents
+				const time = Date.now() * 0.0001 // Very slow time progression for air currents
+				const airStrength = 0.3 // Gentle air current strength
+
+				for (const [i, node] of nodes.entries()) {
+					// Skip static nodes (they're fixed)
+					if (node.group === 'static') continue
+					// Skip secondary nodes (less wiggle)
+					if (node.group === 'secondary') continue
+					// Apply to a subset of nodes less motion
+					if (i % 20 !== 0) continue
+
+					// Create slow-changing air currents using multiple sine waves at different frequencies
+					// Each node experiences slightly different air based on its position and phase
+					const airCurrentX =
+						Math.sin(time * 0.7 + node.wigglePhaseX) * 0.6 + // Slow primary current
+						Math.sin(time * 1.3 + node.wigglePhaseX * 0.5) * 0.3 + // Medium secondary current
+						Math.sin(time * 2.1 + node.wigglePhaseX * 0.2) * 0.1 // Subtle tertiary current
+
+					const airCurrentY =
+						Math.cos(time * 0.8 + node.wigglePhaseY) * 0.6 + // Slow primary current
+						Math.cos(time * 1.1 + node.wigglePhaseY * 0.7) * 0.3 + // Medium secondary current
+						Math.cos(time * 1.9 + node.wigglePhaseY * 0.3) * 0.1 // Subtle tertiary current
+
+					// Apply very gentle air currents that persist longer
+					node.vx = (node.vx || 0) + airCurrentX * airStrength * 0.008
+					node.vy = (node.vy || 0) + airCurrentY * airStrength * 0.008
+				}
+			})
+			.alphaTarget(0.1) // Keep simulation running indefinitely for continuous wiggle
+			.alphaDecay(0) // Prevent alpha from decaying to zero
 
 		// Select the declaratively created link and node groups
 		const linksElement = this.shadowRoot?.querySelector('.links')
