@@ -3,7 +3,7 @@
 	"scripts": {
 		"start": "five-server . --open index.html",
 		"dev": "npm start",
-		"build": "tsc",
+		"typecheck": "tsc",
 		"format": "prettier --write '**/*.{js,ts,json,md}'"
 	},
 	"devDependencies": {

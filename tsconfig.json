@@ -3,9 +3,10 @@
 		"allowJs": true,
 		"checkJs": true,
 
-		"declaration": true,
-		"declarationMap": true,
-		"emitDeclarationOnly": true,
+		// "declaration": true,
+		// "declarationMap": true,
+		// "emitDeclarationOnly": true,
+		"noEmit": true, // don't emit anything, this is a plain JS app.
 
 		"sourceMap": true,
 		"target": "ES2023",

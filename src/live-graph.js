@@ -3,6 +3,7 @@ import {html, svg} from 'nimble-html'
 import * as d3 from 'd3'
 import 'lume'
 import {DopeElement} from './DopeElement.js'
+/** @import { Element3D } from 'lume' */
 
 // preload data (for simplicity)
 const response = await fetch('./src/data.json')
@@ -16,12 +17,15 @@ const nodeDiamPrimary = 80
 const perspective = 300
 const maxNodeDepth = 100
 
-export class LiveGraph extends DopeElement {
-	resizeHandler = () => this.update()
+const limeGreenish = '#41f28b'
+const darkGray = '#333333'
 
+export class LiveGraph extends DopeElement {
 	data = graphData
 
 	initializeGraph() {
+		if (!this.isConnected) return
+
 		// Get SVG and container elements from the declarative template
 		const svgElement = this.shadowRoot?.querySelector('svg')
 		if (!svgElement) {
@@ -38,19 +42,7 @@ export class LiveGraph extends DopeElement {
 			} else {
 				// Pre-calculate Z depth: secondary nodes get random depth, primary nodes stay at z=0
 				const z = d.group === 'secondary' ? (Math.random() * -maxNodeDepth) | 0 : 0
-				// Add wiggle parameters for organic movement
-				const wigglePhaseX = Math.random() * Math.PI * 2
-				const wigglePhaseY = Math.random() * Math.PI * 2
-				const wiggleSpeed = 0.5 + Math.random() * 0.5 // Random speed between 0.5-1.0
-				return {
-					...d,
-					x: Math.random() * 400 - 200,
-					y: Math.random() * 400 - 200,
-					z,
-					wigglePhaseX,
-					wigglePhaseY,
-					wiggleSpeed,
-				}
+				return {...d, x: Math.random() * 400 - 200, y: Math.random() * 400 - 200, z}
 			}
 		})
 
@@ -64,6 +56,7 @@ export class LiveGraph extends DopeElement {
 					.id(d => /** @type {any} */ (d).id)
 					.distance(80), // Increase link distance from default ~30 to 80
 			)
+			// Repulsion of static nodes to create a central exclusion zone
 			.force(
 				'charge',
 				d3.forceManyBody().strength(d => {
@@ -82,41 +75,13 @@ export class LiveGraph extends DopeElement {
 					}
 					return -250
 				}),
-			) // Static nodes have reduced repulsion for smaller exclusion zone
+			)
 			.force('x', d3.forceX(0).strength(0.1)) // Horizontal centering
 			.force('y', d3.forceY(0).strength(0.05))
-			.force('wiggle', () => {
-				// Balloon-in-air effect: gentle, prolonged air currents
-				const time = Date.now() * 0.0001 // Very slow time progression for air currents
-				const airStrength = 0.3 // Gentle air current strength
-
-				for (const [i, node] of nodes.entries()) {
-					// Skip static nodes (they're fixed)
-					if (node.group === 'static') continue
-					// Skip secondary nodes (less wiggle)
-					if (node.group === 'secondary') continue
-					// Apply to a subset of nodes less motion
-					if (i % 20 !== 0) continue
-
-					// Create slow-changing air currents using multiple sine waves at different frequencies
-					// Each node experiences slightly different air based on its position and phase
-					const airCurrentX =
-						Math.sin(time * 0.7 + node.wigglePhaseX) * 0.6 + // Slow primary current
-						Math.sin(time * 1.3 + node.wigglePhaseX * 0.5) * 0.3 + // Medium secondary current
-						Math.sin(time * 2.1 + node.wigglePhaseX * 0.2) * 0.1 // Subtle tertiary current
-
-					const airCurrentY =
-						Math.cos(time * 0.8 + node.wigglePhaseY) * 0.6 + // Slow primary current
-						Math.cos(time * 1.1 + node.wigglePhaseY * 0.7) * 0.3 + // Medium secondary current
-						Math.cos(time * 1.9 + node.wigglePhaseY * 0.3) * 0.1 // Subtle tertiary current
-
-					// Apply very gentle air currents that persist longer
-					node.vx = (node.vx || 0) + airCurrentX * airStrength * 0.008
-					node.vy = (node.vy || 0) + airCurrentY * airStrength * 0.008
-				}
-			})
-			.alphaTarget(0.1) // Keep simulation running indefinitely for continuous wiggle
-			.alphaDecay(0) // Prevent alpha from decaying to zero
+			// Adjust alpha and velocity decay for continuous subtle motion
+			.alphaTarget(1)
+			.alphaDecay(0)
+			.velocityDecay(0.6)
 
 		// Select the declaratively created link and node groups
 		const linksElement = this.shadowRoot?.querySelector('.links')
@@ -131,16 +96,16 @@ export class LiveGraph extends DopeElement {
 		const lumeContainer = d3.select(lumeContainerEl)
 
 		// Bind to existing declaratively created SVG elements
-		const link = linkGroup.selectAll('line').data(links)
+		const link = linkGroup.selectAll('.svgLink').data(links)
 		const node = nodeGroup
-			.selectAll('circle')
+			.selectAll('.svgNode')
 			.data(nodes)
 			.call(/** @type {any} */ (d3.drag()).on('start', dragstarted).on('drag', dragged).on('end', dragended))
 
 		// Bind to existing declaratively created Lume elements
-		const lumeLink = lumeContainer.selectAll('lume-line').data(links)
+		const lumeLink = lumeContainer.selectAll('.lumeLink').data(links)
 		const lumeNode = lumeContainer
-			.selectAll('lume-rounded-rectangle')
+			.selectAll('.lumeNode')
 			.data(nodes)
 			.call(/** @type {any} */ (d3.drag()).on('start', dragstarted).on('drag', dragged).on('end', dragended))
 
@@ -185,18 +150,79 @@ export class LiveGraph extends DopeElement {
 		if (!light) throw new Error('Lume point light not found')
 
 		light.position = (x, y, z, t, dt) => [400 * Math.sin(t * 0.001), 400 * Math.cos(t * 0.001), z]
+
+		// Update template on window resize to maintain consistent scale
+		window.addEventListener('resize', () => this.update(), {signal: this.disconnectSignal})
+
+		// Move proximityTarget nodes closer to the current pointer position on X/Y based on a sine wave of the distance.
+		document.addEventListener(
+			'pointermove',
+			e => {
+				const nodes = /** @type {NodeListOf<Element3D>} */ (this.shadowRoot?.querySelectorAll('.lumeNode'))
+
+				for (const node of nodes) {
+					if (node.dataset.group !== 'primary') continue // only affect primary nodes
+
+					const proximityTarget = /** @type {Element3D} */ (node.querySelector('.pointerProximityTarget'))
+
+					// The distance at which the node starts reacting to pointer proximity.
+					const threshold = 400
+					// The smaller, the less the node moves toward the pointer once the pointer is within threshold.
+					const attraction = 0.25
+
+					// Node positions are from the center of the screen, while pointer events are from top-left.
+					const distanceX = node.position.x + window.innerWidth / 2 - e.clientX
+					const distanceY = node.position.y + window.innerHeight / 2 - e.clientY
+					const distance = Math.sqrt(distanceX ** 2 + distanceY ** 2)
+
+					// if (i === 0) console.log('---', e.clientX, node.position.x, distanceX)
+
+					if (distance < threshold) {
+						// When the pointer gets within threshold, the proximityTarget
+						// element moves towards the pointer on the first half
+						// of the threshold distance, then moves back to center
+						// on the second half, limited by the actual distance
+						// (or less depending on attraction).
+						const sineWaveX = ((threshold - distance) / threshold) * Math.PI
+						const offset = Math.sin(sineWaveX) * distance * attraction
+						const offsetX = (distanceX / distance) * offset
+						const offsetY = (distanceY / distance) * offset
+						proximityTarget.position = [-offsetX, -offsetY, 0]
+					} else {
+						// Reset to original depth
+						proximityTarget.position = [0, 0, 0]
+					}
+				}
+			},
+			{signal: this.disconnectSignal},
+		)
+
+		const proximityNodes = /** @type {NodeListOf<Element3D>} */ (this.shadowRoot?.querySelectorAll('.proximityNode'))
+		const proximityTargets = /** @type {NodeListOf<Element3D>} */ (
+			this.shadowRoot?.querySelectorAll('.pointerProximityTarget')
+		)
+
+		requestAnimationFrame(function animate(time) {
+			for (const [i, proximityNode] of proximityNodes.entries()) {
+				const proximityTarget = proximityTargets[i]
+
+				// lerp towards the respective proximity target
+				proximityNode.position = [
+					proximityNode.position.x + (proximityTarget.position.x - proximityNode.position.x) * 0.02,
+					proximityNode.position.y + (proximityTarget.position.y - proximityNode.position.y) * 0.02,
+					proximityNode.position.z + (proximityTarget.position.z - proximityNode.position.z) * 0.02,
+				]
+			}
+
+			requestAnimationFrame(animate)
+		})
 	}
 
 	connectedCallback() {
+		super.connectedCallback()
+
 		// Wait for the template to be rendered before initializing the graph.
 		queueMicrotask(() => this.initializeGraph())
-
-		// Update template on window resize to maintain consistent scale
-		window.addEventListener('resize', this.resizeHandler)
-	}
-
-	disconnectedCallback() {
-		window.removeEventListener('resize', this.resizeHandler)
 	}
 
 	template() {
@@ -214,6 +240,7 @@ export class LiveGraph extends DopeElement {
 							? this.data.links.map(
 									link => svg`
 										<line
+											class="svgLink"
 											data-value="${link.value}"
 											stroke="#999"
 											stroke-opacity="0.6"
@@ -244,6 +271,7 @@ export class LiveGraph extends DopeElement {
 
 									return svg`
 										<circle
+											class="svgNode"
 											r=${radius}
 											data-id="${node.id}"
 											data-group="${node.group}"
@@ -266,8 +294,8 @@ export class LiveGraph extends DopeElement {
 					webgl
 					fog-mode="linear"
 					fog-color="white"
-					fog-near=${perspective - maxNodeDepth * 1.3}
-					fog-far=${perspective + maxNodeDepth * 1.1}
+					fog-near=${perspective - maxNodeDepth * 0.1}
+					fog-far=${perspective + maxNodeDepth * 1.2}
 				>
 					<lume-ambient-light intensity="0.5"></lume-ambient-light>
 
@@ -279,14 +307,23 @@ export class LiveGraph extends DopeElement {
 					>
 						<!-- Any lume content in here with position="0 0 0" (the default) is in the center of the screen. -->
 
-						<lume-point-light position="0 0 200" intensity="20000" color="white"></lume-point-light>
-
 						<lume-camera-rig
 							min-vertical-angle="0"
 							max-vertical-angle="0"
 							min-horizontal-angle="0"
 							max-horizontal-angle="0"
 						></lume-camera-rig>
+
+						<lume-point-light position="0 0 200" intensity="2000" color="royalblue">
+							<lume-sphere
+								visible="false"
+								size="30 30 30"
+								mount-point="0.5 0.5 0.5"
+								cast-shadow="false"
+								has="basic-material"
+								color="yellow"
+							></lume-sphere>
+						</lume-point-light>
 
 						<!-- For each link in the graph, create a lume-line to
 						connect the two nodes. Every three numbers in the points
@@ -296,14 +333,20 @@ export class LiveGraph extends DopeElement {
 						${this.data
 							? this.data.links.map(
 									link => html`
-										<lume-line data-value="${link.value}" color="black" points="0 0 0 50 50 0"></lume-line>
+										<lume-line
+											class="lumeLink"
+											data-value="${link.value}"
+											color="black"
+											opacity="0"
+											points="0 0 0 50 50 0"
+										></lume-line>
 									`,
 								)
 							: ''}
 
 						<!-- for each node in the graph, create a lume-rounded-rectangle -->
 						${this.data
-							? this.data.nodes.map(node => {
+							? this.data.nodes.map((node, i) => {
 									const randomSizePick = (Math.random() * nodeDiamsSecondary.length) | 0
 									const diameter =
 										String(node.group) === 'static'
@@ -312,11 +355,9 @@ export class LiveGraph extends DopeElement {
 												? nodeDiamsSecondary[randomSizePick]
 												: nodeDiamPrimary
 
-									const limeGreenish = '#41f28b'
-
 									const color =
 										String(node.group) === 'static'
-											? '#333333'
+											? darkGray
 											: // String(node.group) === 'secondary'
 												// 	? '#1f77b4'
 												// 	: '#ff7f0e'
@@ -324,6 +365,7 @@ export class LiveGraph extends DopeElement {
 
 									return html`
 										<lume-rounded-rectangle
+											class="lumeNode"
 											has="basic-material"
 											mount-point="0.5 0.5"
 											.size="${[diameter, diameter]}"
@@ -333,9 +375,27 @@ export class LiveGraph extends DopeElement {
 											data-id="${node.id}"
 											data-group="${node.group}"
 											.color="${color}"
+											xcolor="white"
 											receive-shadow="false"
-											opacity="${String(node.group) === 'static' ? '0' : '1'}"
-										></lume-rounded-rectangle>
+											xopacity="${String(node.group) === 'static' ? '0' : '1'}"
+											opacity="0"
+										>
+											<lume-rounded-rectangle
+												class="proximityNode"
+												has="basic-material"
+												mount-point="0.5 0.5"
+												align-point="0.5 0.5"
+												.size="${Array(2).fill(diameter * 0.6)}"
+												.cornerRadius="${(diameter * 0.6) / 2}"
+												thickness="0.1"
+												quadratic-corners="false"
+												color="cornflowerblue"
+												receive-shadow="false"
+												opacity="${String(node.group) === 'static' ? '0' : '1'}"
+											></lume-rounded-rectangle>
+
+											<lume-element3d class="pointerProximityTarget" align-point="0.5 0.5"></lume-element3d>
+										</lume-rounded-rectangle>
 									`
 								})
 							: ''}

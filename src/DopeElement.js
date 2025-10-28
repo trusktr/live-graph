@@ -5,6 +5,9 @@ import {html} from 'nimble-html'
  * elements with declarative templates using the `html` template tag function.
  */
 export class DopeElement extends HTMLElement {
+	#disconnectAborter = new AbortController()
+	disconnectSignal = this.#disconnectAborter.signal
+
 	constructor() {
 		super()
 
@@ -27,5 +30,13 @@ export class DopeElement extends HTMLElement {
 	 */
 	template() {
 		return html`<slot></slot>`
+	}
+
+	connectedCallback() {}
+
+	disconnectedCallback() {
+		this.#disconnectAborter.abort()
+		this.#disconnectAborter = new AbortController()
+		this.disconnectSignal = this.#disconnectAborter.signal
 	}
 }
