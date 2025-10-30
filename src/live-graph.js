@@ -20,6 +20,11 @@ const maxNodeDepth = 100
 const limeGreenish = '#41f28b'
 const darkGray = '#333333'
 
+/**
+ * @type {boolean} - Whether to enable the exclusion zone (empty space) in the center of the view.
+ */
+const exclusionZoneEnabled = true
+
 export class LiveGraph extends DopeElement {
 	data = graphData
 
@@ -403,12 +408,38 @@ export class LiveGraph extends DopeElement {
 				</lume-scene>
 			</div>
 
+			<h1>Hello</h1>
+
 			<style>
 				:host {
 					display: block;
 					width: 100%;
 					height: 100vh;
 					background: white;
+				}
+
+				h1 {
+					margin: 0;
+					position: absolute;
+					transform: translate(-50%, -50%);
+					top: 50%;
+					left: 50%;
+					/* A good cross-platform sans-serif default: */
+					font-family:
+					/* macOS 10.11+ */
+						-apple-system,
+						BlinkMacSystemFont,
+						/* Windows */ 'Segoe UI',
+						/* Android */ Roboto,
+						/* Linux */ Oxygen,
+						Ubuntu,
+						Cantarell,
+						/* Generic */ 'Open Sans',
+						'Helvetica Neue',
+						sans-serif;
+					/* pink */
+					color: #ff73b9;
+					font-size: 60px;
 				}
 
 				svg {
